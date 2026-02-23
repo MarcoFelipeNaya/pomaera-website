@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomaera - Localidades</title>
+    <link rel="stylesheet" href="/Pomaera/styles/general.css";>
+    <link rel="stylesheet" href="/Pomaera/styles/locations.css";>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Pomaera/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Pomaera/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Pomaera/favicon-16x16.png">
+    <link rel="manifest" href="/Pomaera/site.webmanifest">
+
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1><i class="fas fa-dragon"></i> Pomaera</h1>
+                <p class="tagline">Um mundo de magia e aventuras</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/Pomaera/index.html" >Home</a></li>
+                <li><a href="#world">Mundo</a></li>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="#locations" class="active">Localidades</a></li>
+                <li><a href="#lore">Lore</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="locations-hero">
+        <div class="hero-overlay">
+            <div class="locations-hero-content">
+                <h1><i class="fas fa-map-marked-alt"></i> Descubra os Reinos</h1>
+                <p>De grandes cidades para ruínas esquecidas, explore cada canto de Pomaera.</p>
+                <div class="search-container">
+                    <input type="text" id="locationSearch" placeholder="Search locations...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="locations-container">
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <div class="filter-group">
+                <h3>Filter by Type:</h3>
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All</button>
+                    <button class="filter-tag" data-filter="city"><i class="fas fa-city"></i> Cities</button>
+                    <button class="filter-tag" data-filter="wilderness"><i class="fas fa-tree"></i> Wilderness</button>
+                    <button class="filter-tag" data-filter="dungeon"><i class="fas fa-dungeon"></i> Dungeons</button>
+                    <button class="filter-tag" data-filter="town"><i class="fas fa-home"></i> Towns</button>
+                    <button class="filter-tag" data-filter="ruin"><i class="fas fa-monument"></i> Ruins</button>
+                </div>
+            </div>
+            
+            <div class="view-controls">
+                <button id="gridViewBtn" class="view-btn active"><i class="fas fa-th-large"></i> Grid</button>
+                <button id="listViewBtn" class="view-btn"><i class="fas fa-list"></i> List</button>
+            </div>
+        </div>
+
+        <section class="regions-section">
+            <h2 class="section-title">Regiões de Pomaera</h2>
+            <div class="regions-grid">
+                <div class="region-card" data-region="âmago">
+                    <div class="region-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Âmago</h3>
+                    <p>Florestas e campos verdes, cidades que prosperam</p>
+                </div>
+                <div class="region-card" data-region="coralia">
+                    <div class="region-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Corália</h3>
+                    <p>Montanhas nevadas e a Falha</p>
+                </div>
+                <div class="region-card" data-region="luna">
+                    <div class="region-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Luna</h3>
+                    <p>Minérios raros e campos áridos</p>
+                </div>
+                <div class="region-card" data-region="modega">
+                    <div class="region-icon">
+                        <i class="fas fa-skull"></i>
+                    </div>
+                    <h3>Modega</h3>
+                    <p>Região divida, pântanos e planices</p>
+                </div>
+                <div class="region-card" data-region="montes">
+                    <div class="region-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Montes Tempestuosos</h3>
+                    <p>Ventos fortes e terras duras</p>
+                </div>
+                <div class="region-card" data-region="myr">
+                    <div class="region-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Myr</h3>
+                    <p>Antigos monumentos, vermelho e riquezas</p>
+                </div>
+                <div class="region-card" data-region="piéco">
+                    <div class="region-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Piéco</h3>
+                    <p>Desertos, rebeliões e a cidade de vidro</p>
+                </div>
+                <div class="region-card" data-region="tariniel">
+                    <div class="region-icon">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3>Tariniel</h3>
+                    <p>Campos de batalha antigos e novas culturas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Grid -->
+        <section class="locations-main">
+            <h2 class="section-title">All Locations</h2>
+            <div class="locations-grid" id="locationsGrid">
+                <!-- Location cards will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section class="map-section">
+            <h2 class="section-title">World Map</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <p>Your Interactive Map Here</p>
+                        <p class="map-note">Add Leaflet.js or an image map for interactivity</p>
+                    </div>
+                    <!-- Simple SVG map as placeholder -->
+                    <svg class="simple-map" viewBox="0 0 800 400">
+                        <rect width="800" height="400" fill="#1e293b"/>
+                        <!-- Mountains (North) -->
+                        <polygon points="100,100 150,50 200,100 250,70 300,100" fill="#4a5568"/>
+                        <polygon points="400,150 450,100 500,150 550,120 600,150" fill="#4a5568"/>
+                        
+                        <!-- Forest (West) -->
+                        <circle cx="150" cy="300" r="40" fill="#276749"/>
+                        <circle cx="200" cy="250" r="35" fill="#276749"/>
+                        <circle cx="100" cy="280" r="30" fill="#276749"/>
+                        
+                        <!-- Desert (South) -->
+                        <circle cx="500" cy="350" r="60" fill="#d69e2e"/>
+                        
+                        <!-- Cities -->
+                        <circle cx="300" cy="200" r="15" fill="#e53e3e" class="map-city" data-city="capital"/>
+                        <circle cx="500" cy="250" r="12" fill="#3182ce" class="map-city" data-city="port"/>
+                        <circle cx="200" cy="150" r="10" fill="#38a169" class="map-city" data-city="mountain"/>
+                        
+                        <!-- Labels -->
+                        <text x="300" y="190" text-anchor="middle" fill="#fbbf24" class="map-label">Capital City</text>
+                        <text x="500" y="240" text-anchor="middle" fill="#fbbf24" class="map-label">Port Haven</text>
+                    </svg>
+                </div>
+                <div class="map-legend">
+                    <h4>Map Legend</h4>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #e53e3e;"></span>
+                        <span>Major Cities</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #3182ce;"></span>
+                        <span>Ports</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #38a169;"></span>
+                        <span>Fortresses</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #4a5568;"></span>
+                        <span>Mountains</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Detail Modal (Hidden by default) -->
+        <div class="modal" id="locationModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p>Pomaera • Built with HTML, CSS, JavaScript & Love.</p>
+        <p class="footer-note">Mundo criado por Lucas Queiroz & Marco Felipe, mas que só existe por conta dos nossos incríveis jogadores.</p>
+    </footer>
+    <script src="/Pomaera/scripts/main.js"></script>
+    <script src="/Pomaera/scripts/locations.js"></script>
+  </body>
+</html>

@@ -1,0 +1,571 @@
+/* Locations Page Specific Styles */
+
+/* Hero Section for Locations */
+.locations-hero {
+    height: 400px;
+    background: 
+        linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+        url('/Pomaera/images/NovoContinente.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.locations-hero-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.locations-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-gold);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.locations-hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.search-container {
+    display: flex;
+    max-width: 500px;
+    margin: 2rem auto 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#locationSearch {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+}
+
+#searchBtn {
+    padding: 1rem 2rem;
+    background: var(--accent-purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+#searchBtn:hover {
+    background: var(--accent-gold);
+}
+
+/* Filter Controls */
+.filter-controls {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.filter-group h3 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: var(--text-light);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.filter-tag:hover {
+    border-color: var(--accent-purple);
+    background: rgba(139, 92, 246, 0.1);
+}
+
+.filter-tag.active {
+    background: var(--accent-purple);
+    border-color: var(--accent-purple);
+    color: white;
+}
+
+.view-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    color: var(--text-light);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    border-color: var(--accent-gold);
+}
+
+.view-btn.active {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: var(--primary-dark);
+}
+
+/* Regions Section */
+.regions-section {
+    margin-bottom: 3rem;
+}
+
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.region-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.region-card:hover {
+    border-color: var(--accent-purple);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.region-card[data-region="âmago"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2d482f 100%);
+}
+
+.region-card[data-region="coralia"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #717983 100%);
+}
+
+.region-card[data-region="luna"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #681074 100%);
+}
+
+.region-card[data-region="modega"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #544222 100%);
+}
+
+.region-card[data-region="montes"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #504e4c 100%);
+}
+
+.region-card[data-region="myr"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #54222a 100%);
+}
+
+.region-card[data-region="piéco"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #4f5422 100%);
+}
+
+.region-card[data-region="tariniel"] {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #345785 100%);
+}
+
+.region-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.region-card[data-region="âmago"] .region-icon {
+    color: #00d80e;
+}
+
+.region-card[data-region="coralia"] .region-icon {
+    color: #c4c4c4;
+}
+
+.region-card[data-region="luna"] .region-icon {
+    color: #980caa;
+}
+
+.region-card[data-region="modega"] .region-icon {
+    color: #d1890e;
+}
+
+.region-card[data-region="montes"] .region-icon {
+    color: #6e6e6e;
+}
+
+.region-card[data-region="myr"] .region-icon {
+    color: #bd2c4b;
+}
+
+.region-card[data-region="piéco"] .region-icon {
+    color: #bbb01b;
+}
+
+.region-card[data-region="tariniel"] .region-icon {
+    color: #4891bb;
+}
+
+.region-card h3 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.locations-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.location-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.location-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-card:hover {
+    border-color: var(--accent-purple);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.location-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.location-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-purple);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.location-content {
+    padding: 1.5rem;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.location-title {
+    color: var(--accent-gold);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.location-region {
+    color: var(--accent-purple);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.location-desc {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.location-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.detail-item i {
+    color: var(--accent-gold);
+}
+
+.location-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.location-tag {
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--accent-purple);
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.view-details {
+    background: var(--accent-purple);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.view-details:hover {
+    background: var(--accent-gold);
+    color: var(--primary-dark);
+}
+
+/* Map Section */
+.map-section {
+    margin: 4rem 0;
+}
+
+.map-container {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    margin-top: 2rem;
+}
+
+.map-placeholder {
+    position: relative;
+    height: 400px;
+    background: #1a202c;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: var(--accent-gold);
+}
+
+.map-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-note {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.simple-map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-city {
+    cursor: pointer;
+    transition: r 0.3s;
+}
+
+.map-city:hover {
+    r: 20;
+}
+
+.map-label {
+    font-size: 12px;
+    font-family: 'Cinzel', serif;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.map-city:hover + .map-label {
+    opacity: 1;
+}
+
+.map-legend {
+    padding: 1.5rem;
+    background: rgba(30, 41, 59, 0.7);
+    border-top: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.map-legend h4 {
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: var(--secondary-dark);
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    animation: modalSlideIn 0.3s;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: var(--accent-gold);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .locations-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .locations-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .regions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-tags {
+        justify-content: center;
+    }
+}

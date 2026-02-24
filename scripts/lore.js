@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 1,
             title: "Joli & Loam",
-            category: "lenda",
+            category: "historia",
             excerpt: "O que hoje chama-se Lago Joli é um corpo d'água muito violento e temeroso. A travessia deste lago é muito difícil, e as razões não são conhecidas.",
             fullText: [
                 "O que hoje chama-se Lago Joli é um corpo d'água muito violento e temeroso. A travessia deste lago é muito difícil, e as razões não são conhecidas. O que passa de fato, é que qualquer um que tente atravessá-lo terá que enfrentar correntes de água muito turbulentas, tempestades localizadas além de animais ferozes de todos os tipos: crocodilos, peixes agressivos, lulas gigantes e até baleias.",
@@ -38,6 +38,61 @@ document.addEventListener('DOMContentLoaded', function () {
             author: "Lucas Queiroz",
             readTime: 5
         }
+
+        ,{
+            id: 2,
+            title: "Hamil, o Pequenino Destemido",
+            category: "historia",
+            excerpt: "A formação de Âmago é antiga e assim, muitas gerações modernas não têm nem ideia de quem foram os primeiros povos a chegar na região e a dominar a magia. Mas todos sabem quem foi Hamil.",
+            fullText: [
+                "A formação de Âmago é antiga e assim, muitas gerações modernas não têm nem ideia de quem foram os primeiros povos a chegar na região e a dominar a magia. Mas todos sabem quem foi Hamil. Em quaisquer lendas da origem de Âmago, encontra-se a figura desde pequenino. Hamil foi um dos fundadores de Âmago e fundou a cidadela de Áltima em homenagem à sua mãe. Dizem que Hamil era um pequenino muito determinado, corajoso e desbravador, e em todas suas conquistas, lembrava das palavras de incentivo de sua mãe.",
+                "Hamil tinha muita fé em si mesmo, e foi um dos pioneiros em levar a magia para vilas e assentamentos mais afastados da Grande Árvore. Ainda hoje é comum alguns pequeninos dizerem que seu tataravô era sobrinho-neto de Hamil, ou qualquer outro parentesco que o conecte com a família desta lenda.",
+                "Muitos feitos grandiosos são atribuídos a Hamil: fundação de Áltima, as explorações dos bosques do norte, invenção do sistema de comunicação por fumaça, e a travessia do bosque central de Âmago. E é esta última que contamos aqui.",
+                "Durante a época da colonização acelerada de Âmago, Hamil e um grupo de exploradores estavam em uma missão: atravessar o bosque central, (chamado bosque Escuro na época) para levar os cristais de mana para povoados do outro lado. Era um grupo de 15 aventureiros, de todas as raças, liderados por Hamil. Após muitos dias dentro do bosque, os suprimentos estavam se esgotando e os aventureiros correndo sérios riscos. Quando todos haviam perdido a esperança, Hamil, teve um estalo de inspiração. Olhou a clareira em que pararam para fazer acampamento, e viu as pedras e minerais cheios de musgo e os encarou como materiais de construção.",
+                "'Estamos perdidos aqui por quê as copas das árvores não nos deixam ver o céu. E se fôssemos altos o suficiente para ver acima das árvores?' - disse Hamil, sorridente.",
+                "'Mas não somos, Hamil. Somos pequenos, ainda mais você que é um Pequenino!'",
+                "'Sou pequeno, mas minha criatividade não tem limites.' Ao dizer isso, Hamil, usou sua compreensão de magia de terra para criar o que parecia ser um pedestral de pedra musgosa de 3 metros de altura. Em uma olhada mais cuidadosa, os exploradores veriam que eram mais que um pedestal: era uma criatura de pedra que agora levava Hamil nos ombros e o permitia ver o céu estrelado por cima do tapete verdíssimo que era as copas das árvores do bosque escuro. Admirados com este feito inédito, os aventureiros seguiram o golem enorme de pedra e Hamil para fora do bosque em menos de 2 dias.",
+                "Após esta travessia, encontaram o povoado que se localizava a beira de um lago e os habitantes ficaram embasbacados com o gigante de terra e os aventureiros que o dominavam. Hamil apresentou a magia para o povoado, que logo o tomou como uma lenda e um líder magnífico. Assim, nasceram as cidades de Hamil, e Hamília e se batizou o lago Hamil. Quanto ao golem? Parece que virou moda entre os proficientes do elemento terra.",
+            ],
+            author: "Lucas Queiroz",
+            readTime: 4
+        }
+
+        ,{
+            id: 3,
+            title: "A gaivota",
+            category: "historia",
+            excerpt: "Nas redondezas de Lândano, há uma pequena vila costeira que se chama Apoeia. É uma vila de pescadores, a quantidade de casas pode ser contadas nos dedos das mãos.",
+            fullText: [
+                "Nas redondezas de Lândano, há uma pequena vila costeira que se chama Apoeia. É uma vila de pescadores, a quantidade de casas pode ser contadas nos dedos das mãos. Suel era uma pequena genasi da terra que ali morava com seu pai, devia ter seus 7 anos quando ao olhar para o oceano viu surgindo do horizonte uma gaivota que trazia um pequeno embrulho em suas patas. Como se houvesse um dever cívico, pousou aos pés de Suel e ali deixou o pacote. A criança, sem hesitar, logo desembrulhou o objeto que revelara ser uma pequena garrafa de vidro com uma carta dentro.",
+                "Apesar da pouca idade, e do quão isolada estava da civilização, sabia ler e escrever muito bem, fato que seu pai se orgulhava em dizer aos companheiros de pesca. Ávida para ler o conteúdo da carta, Suel logo quebrou a garrafa e postou-se na melhor pose de leitora, sentada de cócoras na beira do mar.",
+                "A quem chegar esta carta. Estou muito longe daqui e sozinho. Preciso de companhia. Sou Jorge e gosto de lentilhas. Quem é você?",
+                "A criança logo sorriu e replicou a carta com sua letra de mão garranchenta, escrevendo no verso do pedaço de papel mofado. Para sua surpresa, assim que acabou de escrever, a gaivota tomou de suas mãos a resposta e voou para além do horizonte. Suel não dormira, tamanha era sua ansiedade e animação pela aventura. No dia seguinte, ao chegar na praia, lá estava a gaivota portando uma nova carta.",
+                "Os dias se seguiram assim, onde Suel e seu correspondente amigo Jorge sempre se mantinham em contato e conversaram. Assim foi por anos. Jorge estava lá para felicitar Suel pelos seus aniversários. Suel explicava a Jorge que a pesca se tornava cada vez mais difícil com o passar dos anos, segundo seu pai, e que comer lentilhas era o melhor a se fazer. Jorge consolou Suel quando seu pai faleceu. Suel confidenciou que entrara para o grupo de pescadores de seu pai para homenageá-lo mas acabou gostando do mar. Cada ano, a amizade de papel se estreitava, e na falta de seu pai, Jorge virara uma figura paterna presente através da gaivota que sempre trazia notícias do horizonte.",
+                "Uma tarde muito serena foi marcada pela figura da gaivota que surgiu do horizonte trazendo sua carta diária e pousou sobre a areia suavemente. Nada de Suel aparecer. A lua já substituía o sol há horas quando a gaivota voltou ao horizonte. Isto se repetiu uma, duas, dezenas de vezes. Parecia que Suel não responderia à última carta de Jorge.",
+                "Em uma destas tardes sem resposta, a gaivota pousa sobre a areia e logo se transforma em um tiferino alto e de meia-idade. Ele estrala as costas, olha em direção à vila de Apoeia. Logo espreguiça, tira de um dos seus bolsos um pote de lentilhas. E em meio a duas mastigadas percebe que isto de fazer amigos por cartas é um péssimo passatempo.",
+                "E  não, não vou contar o que aconteceu com Suel."
+            ],
+            author: "Lucas Queiroz",
+            readTime: 4
+        }
+
+        ,{
+            id: 4,
+            title: "As três Irmãs",
+            category: "historia",
+            excerpt: "Este é um conto conhecido em todo Âmago, desde o escaldar de Pieco até as geleiras em Luna. É uma história singela e mística.",
+            fullText: [
+                "Não se sabe ao certo onde, mas o quando é preciso. Era o terceiro dia do agouro e o mês não estava fácil. Para a pequena vila, o começo do inverno estava sendo especialmente rigoroso. As nevascas começaram mais cedo neste ano específico, e os animais da vila, principalmente as ovelhas estavam sofrendo muito. A neve chegava a 2 metros de profundidade e algumas famílias estavam ficando isoladas na neve, sem comida e sem saída. As famílias sofreriam este ano.",
+                "Assim que ao por do sol daquele dia terrível, a nevasca cessou bruscamente. E a vila recebeu a visita de três figuras etéreas, quase mágicas. Eram três figuras humanoides, mas pareciam flutuar no ar. E brilhavam. As figuras embasbacavam os aldeões. Eram três, e mesmo sem saber, seus nomes eram claros para todos: Aniel, Lauriel e Isbel.",
+                "Aniel derreteu a neve, desatolou as carroças, desemperrou as portas, libertou as casas. Lauriel, juntou as ovelhas, resgatou as plantas, reuniu famílias. E Isbel clareou o céu, iluminou as tochas e aqueceu a vila.",
+                "Neste momento tão único, o céu dispunha de luzes coloridas ressonantes com os brilhos das figuras irmãs e tão cedo como vieram, quando as duas luas cheias viraram uma só, em meio ao eclipse, elas desapareceram.",
+                "Não se sabe se esta história é verdadeira. Mas o que sabemos é que por todo Âmago, não importa quão difícil esteja sua vida e sua situação, uma voz amiga sempre te consolará dizendo:",
+                "Nada é tão imóvel que Aniel não mova. Nada é tão isolado que Lauriel não junte. Nada é tão escuro que Isbel não ilumine."
+            ],
+            author: "Lucas Queiroz",
+            readTime: 2
+        }
         
     ];
 
@@ -45,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         historia:  { label: 'História',  color: '#e07b39', icon: 'fa-scroll' },
         lenda:     { label: 'Lenda',     color: '#f0c040', icon: 'fa-star' },
         cronica:   { label: 'Crônica',   color: '#5b9bd5', icon: 'fa-feather-alt' },
-        mito:      { label: 'Mito',      color: '#9b59b6', icon: 'fa-dragon' },
+        mundo:      { label: 'Mundo',      color: '#9b59b6', icon: 'fa-dragon' },
         profecia:  { label: 'Profecia',  color: '#2ecc71', icon: 'fa-eye' }
     };
 

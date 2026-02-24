@@ -296,3 +296,23 @@ a.card {
     }
 
 }
+
+.footer-socials {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-socials a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-gold);
+}

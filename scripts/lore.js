@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 1,
             title: "Joli & Loam",
-            category: "Lenda",
+            category: "lenda",
             excerpt: "O que hoje chama-se Lago Joli é um corpo d'água muito violento e temeroso. A travessia deste lago é muito difícil, e as razões não são conhecidas.",
             fullText: [
                 "O que hoje chama-se Lago Joli é um corpo d'água muito violento e temeroso. A travessia deste lago é muito difícil, e as razões não são conhecidas. O que passa de fato, é que qualquer um que tente atravessá-lo terá que enfrentar correntes de água muito turbulentas, tempestades localizadas além de animais ferozes de todos os tipos: crocodilos, peixes agressivos, lulas gigantes e até baleias.",

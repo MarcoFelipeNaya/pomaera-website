@@ -280,24 +280,50 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function renderLocations(locationsArray) {
-        locationsGrid.innerHTML = '';
-        
-        if (locationsArray.length === 0) {
-            locationsGrid.innerHTML = `
-                <div class="no-results">
-                    <i class="fas fa-map-marked-alt fa-3x"></i>
-                    <h3>No locations found</h3>
-                    <p>Try a different search or filter</p>
-                </div>
-            `;
-            return;
-        }
-        
-        locationsArray.forEach((location, index) => {
-            const card = createLocationCard(location, index);
-            locationsGrid.appendChild(card);
-        });
+    locationsGrid.innerHTML = '';
+    
+    if (locationsArray.length === 0) {
+        locationsGrid.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-map-marked-alt fa-3x"></i>
+                <h3>No locations found</h3>
+                <p>Try a different search or filter</p>
+            </div>
+        `;
+        return;
     }
+
+    const initialCount = 3;
+    
+    locationsArray.forEach((location, index) => {
+        const card = createLocationCard(location, index);
+        if (index >= initialCount) {
+            card.classList.add('hidden-card');
+        }
+        locationsGrid.appendChild(card);
+    });
+
+    // Add show more button if there are more than initialCount
+    if (locationsArray.length > initialCount) {
+        const showMoreBtn = document.createElement('button');
+        showMoreBtn.className = 'show-more-btn';
+        showMoreBtn.innerHTML = `<i class="fas fa-chevron-down"></i> Ver todas (${locationsArray.length - initialCount} mais)`;
+        showMoreBtn.addEventListener('click', function() {
+            const hidden = locationsGrid.querySelectorAll('.hidden-card');
+            if (hidden.length > 0) {
+                hidden.forEach(card => card.classList.remove('hidden-card'));
+                this.innerHTML = `<i class="fas fa-chevron-up"></i> Ver menos`;
+            } else {
+                locationsArray.slice(initialCount).forEach((_, i) => {
+                    locationsGrid.children[initialCount + i].classList.add('hidden-card');
+                });
+                this.innerHTML = `<i class="fas fa-chevron-down"></i> Ver todas (${locationsArray.length - initialCount} mais)`;
+                locationsGrid.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        locationsGrid.after(showMoreBtn);
+    }
+}
 
     function createLocationCard(location, delayIndex) {
         const card = document.createElement('div');
@@ -426,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="fact">
                                     <i class="fas fa-crown"></i>
                                     <div>
-                                        <strong>Ruler</strong>
+                                        <strong>Governo</strong>
                                         <p>${location.ruler}</p>
                                     </div>
                                 </div>
@@ -463,14 +489,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p>${location.details.factions.join(', ')}</p>
                     </div>
                     
-                    <div class="modal-section">
-                        <h3><i class="fas fa-map-signs"></i> Adventure Hooks</h3>
-                        <ul>
-                            <li>Rumors speak of hidden treasure in the ancient ruins.</li>
-                            <li>A mysterious plague has struck the population.</li>
-                            <li>Strange lights have been seen in the wilderness at night.</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         `;

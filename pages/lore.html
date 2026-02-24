@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomaera - Lore</title>
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/lore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+  </head>
+  <body>
+    <nav class="navbar">
+            <div class="nav-container">
+                <a href="/index.html" class="logo">
+                <h1><i class="fas fa-dragon"></i> Pomaera</h1>
+                <p class="tagline">Um mundo de magia e aventuras</p>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html" >Home</a></li>
+                <li><a href="/index.html#world">Mundo</a>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="/pages/locations.html" >Localidades</a></li>
+                <li><a href="#lore" class="active">Lore</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="lore-hero">
+      <div class="lore-hero-overlay">
+        <div class="lore-hero-content">
+          <h1><i class="fas fa-book-open"></i> Crônicas de Pomaera</h1>
+          <p>Histórias, lendas e segredos guardados pela memória do mundo.</p>
+
+    <div class="search-container">
+            <input type="text" id="loreSearch" placeholder="Buscar histórias...">
+            <button id="loreSearchBtn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="lore-container">
+      <div class="lore-filter-controls">
+        <div class="filter-group">
+          <h3>Filtrar por categoria:</h3>
+          <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">Todos</button>
+            <button class="filter-tag" data-filter="historia"><i class="fas fa-scroll"></i> Histórias</button>
+            <button class="filter-tag" data-filter="lenda"><i class="fas fa-star"></i> Lendas</button>
+            <button class="filter-tag" data-filter="cronica"><i class="fas fa-feather-alt"></i> Crônicas</button>
+            <button class="filter-tag" data-filter="mito"><i class="fas fa-dragon"></i> Mitos</button>
+            <button class="filter-tag" data-filter="profecia"><i class="fas fa-eye"></i> Profecias</button>
+          </div>
+        </div>
+      </div>
+      <section class="lore-main">
+        <h2 class="section-title">Todos os Registros</h2>
+        <div class="lore-grid" id="loreGrid">
+          <!-- Cards injected by lore.js -->
+        </div>
+      </section>
+
+    </main>
+
+    <div class="lore-modal" id="loreModal">
+      <div class="lore-modal-content">
+        <button class="close-lore-modal" id="closeLoreModal">&times;</button>
+        <div class="lore-modal-body" id="loreModalBody">
+          <!-- Full story injected by lore.js -->
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+        <p>Pomaera • Built with HTML, CSS, JavaScript & Love.</p>
+        <p class="footer-note">Mundo criado por Lucas Queiroz & Marco Felipe, mas que só existe por conta dos nossos incríveis jogadores.</p>
+    </footer>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/lore.js"></script>
+    
+  </body>
+</html>

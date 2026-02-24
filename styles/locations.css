@@ -538,34 +538,196 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .locations-hero-content h1 {
-        font-size: 2.5rem;
+    /* Hero */
+    .locations-hero {
+        height: auto;
+        min-height: 300px;
+        background-attachment: scroll; 
+        padding: 3rem 1rem;
     }
-    
+
+    .locations-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .locations-hero-content p {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        margin-top: 1.5rem;
+    }
+
+    /* Filter bar */
     .filter-controls {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
     }
-    
+
+    .filter-tags {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .filter-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Location cards */
     .locations-grid {
         grid-template-columns: 1fr;
     }
-    
+
+
+    /* Regions */
+    .regions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .region-card {
+        padding: 1.2rem;
+    }
+
+    .region-icon {
+        font-size: 2rem;
+    }
+
+    /* Map */
     .map-placeholder {
-        height: 300px;
+        height: 250px;
+    }
+
+    /* Modal — the main problem area */
+    .modal {
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 0;
+        min-height: 100dvh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-body {
+        padding: 1.2rem;
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .close-modal {
+        position: fixed;
+        top: 0.8rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: rgba(15, 23, 42, 0.85);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 1100;
+    }
+
+    /* Modal content layout — collapse 2-col grid to 1-col */
+    .modal-header h2 {
+        font-size: 1.8rem;
+        padding-right: 2.5rem; /* make room for close button */
+    }
+
+    .modal-subtitle {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .modal-image {
+        height: 180px;
+        margin-bottom: 1.2rem;
+    }
+
+    .modal-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.2rem;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0.6rem;
+    }
+
+    .fact {
+        padding: 0.7rem;
+        gap: 0.6rem;
+    }
+
+    .fact i {
+        font-size: 1.2rem;
+    }
+
+    .modal-section {
+        margin-bottom: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .modal-section h3 {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .locations-hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-    
+
     .regions-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .filter-tags {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    
+    .facts-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .location-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .view-details {
+        width: 100%;
+        text-align: center;
     }
 }
+.hidden-card {
+        display: none !important;
+    }
+
+    .show-more-btn {
+        display: block;
+        margin: 2rem auto 0;
+        padding: 0.8rem 2.5rem;
+        background: transparent;
+        border: 2px solid var(--accent-purple);
+        color: var(--accent-purple);
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .show-more-btn:hover {
+        background: var(--accent-purple);
+        color: white;
+    }

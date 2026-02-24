@@ -52,6 +52,10 @@ h1, h2, h3, h4, .logo {
     align-items: center;
 }
 
+a.logo {
+        text-decoration: none;
+    }
+
 .logo h1 {
     font-size: 1.8rem;
     color: var(--accent-gold);
@@ -205,6 +209,13 @@ h1, h2, h3, h4, .logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+a.card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow);
@@ -283,4 +294,5 @@ h1, h2, h3, h4, .logo {
     .guide-section {
         padding: 2rem 1rem;
     }
+
 }

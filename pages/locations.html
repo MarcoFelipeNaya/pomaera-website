@@ -8,12 +8,14 @@
     <title>Pomaera - Localidades</title>
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/locations.css">
+    <link rel="stylesheet" href="/styles/map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 
   </head>
   <body>
@@ -141,57 +143,63 @@
         </section>
 
         <!-- Interactive Map Section -->
-        <section class="map-section">
-            <h2 class="section-title">World Map</h2>
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <div class="map-overlay">
-                        <p>Your Interactive Map Here</p>
-                        <p class="map-note">Add Leaflet.js or an image map for interactivity</p>
-                    </div>
-                    <!-- Simple SVG map as placeholder -->
-                    <svg class="simple-map" viewBox="0 0 800 400">
-                        <rect width="800" height="400" fill="#1e293b"/>
-                        <!-- Mountains (North) -->
-                        <polygon points="100,100 150,50 200,100 250,70 300,100" fill="#4a5568"/>
-                        <polygon points="400,150 450,100 500,150 550,120 600,150" fill="#4a5568"/>
-                        
-                        <!-- Forest (West) -->
-                        <circle cx="150" cy="300" r="40" fill="#276749"/>
-                        <circle cx="200" cy="250" r="35" fill="#276749"/>
-                        <circle cx="100" cy="280" r="30" fill="#276749"/>
-                        
-                        <!-- Desert (South) -->
-                        <circle cx="500" cy="350" r="60" fill="#d69e2e"/>
-                        
-                        <!-- Cities -->
-                        <circle cx="300" cy="200" r="15" fill="#e53e3e" class="map-city" data-city="capital"/>
-                        <circle cx="500" cy="250" r="12" fill="#3182ce" class="map-city" data-city="port"/>
-                        <circle cx="200" cy="150" r="10" fill="#38a169" class="map-city" data-city="mountain"/>
-                        
-                        <!-- Labels -->
-                        <text x="300" y="190" text-anchor="middle" fill="#fbbf24" class="map-label">Capital City</text>
-                        <text x="500" y="240" text-anchor="middle" fill="#fbbf24" class="map-label">Port Haven</text>
-                    </svg>
+        section class="map-section">
+            <h2 class="section-title">Mapa de Pomaera</h2>
+
+            <!--
+                EXPLANATION: The map wrapper controls the height of the map.
+                Leaflet needs a container with a defined height — it won't
+                render inside a container with height: auto.
+                We set it in CSS so it's easy to adjust.
+            -->
+            <div class="map-wrapper">
+
+                <!--
+                    EXPLANATION: This is the div Leaflet binds to.
+                    The id="pomaera-map" is referenced in map.js.
+                    Do NOT put anything else inside this div —
+                    Leaflet owns it entirely.
+                -->
+                <div id="pomaera-map"></div>
+
+                <!--
+                    EXPLANATION: Debug coords display — only visible
+                    when debugMode = true in map.js.
+                    Leave this in the HTML; it's invisible by default.
+                -->
+                <div id="map-debug-coords"></div>
+
+                <!-- Map controls hint -->
+                <div class="map-hint">
+                    <i class="fas fa-search-plus"></i> Scroll para zoom &nbsp;•&nbsp;
+                    <i class="fas fa-hand-paper"></i> Arraste para mover &nbsp;•&nbsp;
+                    <i class="fas fa-map-marker-alt"></i> Clique nos marcadores
                 </div>
-                <div class="map-legend">
-                    <h4>Map Legend</h4>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: #e53e3e;"></span>
-                        <span>Major Cities</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: #3182ce;"></span>
-                        <span>Ports</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: #38a169;"></span>
-                        <span>Fortresses</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: #4a5568;"></span>
-                        <span>Mountains</span>
-                    </div>
+            </div>
+
+            <!--
+                EXPLANATION: Legend moved below the map for cleaner layout.
+                Region colours match exactly your regionColors in locations.js.
+            -->
+            <div class="map-legend">
+                <h4><i class="fas fa-layer-group"></i> Regiões</h4>
+                <div class="legend-regions">
+                    <div class="legend-item"><span class="legend-dot" style="background:#00d659"></span> Âmago</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#aec9dd"></span> Corália</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#9b4fc2"></span> Luna</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#ed8936"></span> Modega</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#93c7a9"></span> Montes Tempestuosos</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#c2456e"></span> Myr</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#d2d600"></span> Piéco</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#0092d6"></span> Tariniel</div>
+                </div>
+                <h4 style="margin-top: 1.2rem"><i class="fas fa-map-marker-alt"></i> Tipos</h4>
+                <div class="legend-types">
+                    <div class="legend-item"><i class="fas fa-city" style="color: var(--accent-purple)"></i> Cidade</div>
+                    <div class="legend-item"><i class="fas fa-home" style="color: var(--accent-purple)"></i> Vila</div>
+                    <div class="legend-item"><i class="fas fa-dungeon" style="color: var(--accent-purple)"></i> Dungeon</div>
+                    <div class="legend-item"><i class="fas fa-tree" style="color: var(--accent-purple)"></i> Natureza</div>
+                    <div class="legend-item"><i class="fas fa-monument" style="color: var(--accent-purple)"></i> Ruína</div>
                 </div>
             </div>
         </section>
@@ -206,7 +214,8 @@
             </div>
         </div>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="/scripts/map.js"></script>
 
     <footer class="footer">
         <p>Pomaera • Built with HTML, CSS, JavaScript & Love.</p>

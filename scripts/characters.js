@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Músico",
             excerpt: "Um animado catfolk que se apresenta como um bardo",
             backstory: "Adicione aqui a história completa do personagem. Pode ser tão longa quanto necessário — este texto aparece no modal quando o jogador clica em 'Ver Personagem'.",
-            image: "https://www.pspr.de/wp-content/uploads/2017/08/Avatar-Platzhalter.jpg",
+            image: "/images/personagens/clovis.webp",
             player: "Lucas Queiroz",
             faction: "Sem facção",
             status: "Falecido"
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Músico",
             excerpt: "Jovem musicista que sempre circula pela alta sociedade.",
             backstory: "Fugindo de Myr após os eventos da Terra Vermelha, Phillip se estabeleceu no Âmago onde viveu até a explosão de Inata.",
-            image: "/images/personagens/philip.webp",
+            image: "/images/personagens/Phillip.webp",
             faction: "Sem facção",
             status: "Desaparecido"
         },
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Desconhecido",
             excerpt: "Um antigo conselheiro de Inata dentro do Conselho das Cinco Cidades e verdaeiro responsável pela explosão de Inata.",
             backstory: "Vaas tomou conhecimento dos Caraputangas enquanto eles viajam até Piéco, viu nesse grupo uma oportunidade para por em prática seu plano mais maligno.",
-            image: "/images/personagens/Vaas.webp",
+            image: "/images/personagens/vaas.webp",
             faction: "Conselho das Cinco Cidades",
             status: "Ativo"
         }

@@ -59,6 +59,23 @@ document.addEventListener('DOMContentLoaded', function () {
         //     desc: "Descrição curta.",
         //     link: true            // set false if no locations page entry yet
         // },
+        {
+            coords: [1004, 1047],       // pixel position [top, left]
+            name: "Lago Roxo",
+            region: "coralia",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
+            type: "wilderness",         // city | town | dungeon | wilderness | ruin
+            desc: "Um lago que há eras se tornou roxo devido as fortes energias mágicas que emanam dele.",
+            link: true            // set false if no locations page entry yet
+        },
+
+        {
+            coords: [381, 1248],       // pixel position [top, left]
+            name: "Porto Draco",
+            region: "modega",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
+            type: "city",         // city | town | dungeon | wilderness | ruin
+            desc: "Uma cidade costeira com lendas e histórias sobre dragões, mas todos sabem que o verdadeiro perigo está no mar.",
+            link: true            // set false if no locations page entry yet
+        },
     ];
 
     // =============================================

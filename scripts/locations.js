@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: "city",
             description: "A principal cidade do Âmago e a casa do conselho das cinco cidades.",
             image: "../images/maps/InataDest.webp",
-            population: "105,000",
+            population: "90,000",
             ruler: "Conselho das Cinco Cidades",
             danger: "Baixo",
             tags: ["Magic", "Capital", "Trade"],
@@ -22,36 +22,36 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 2,
-            name: "Whispering Woods",
+            name: "Lago Roxo",
             region: "coralia",
             type: "wilderness",
-            description: "An ancient forest where trees are said to whisper secrets to those who listen.",
-            image: "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "Elven tribes",
-            ruler: "None",
-            danger: "High",
-            tags: ["Forest", "Elven", "Mystical"],
+            description: "Um lago que há eras se tornou roxo devido as fortes energias mágicas que emanam dele.",
+            image: "",
+            population: "0",
+            ruler: "Família Pétrio",
+            danger: "Alto",
+            tags: ["Forest", "Magic", "Mystical"],
             details: {
-                history: "Home to elves since before recorded history.",
-                notable: "Heart Tree, Whispering Stones, Elven settlements",
-                factions: ["Elven Council", "Druid Circle"]
+                history: "Um lago que há eras se tornou roxo devido as fortes energias mágicas que emanam dele, devido a pressão ninguém sabe o que se encontra em seu interior. Em 2270 houve uma tentativa de ritual por parte de um culto que foi interrompido pelas autoridades de Corália. Ninguém se feriu.",
+                notable: "Alto nível de magia",
+                factions: ["Família Pétrio", "Guilda de Exploração"]
             }
         },
         {
             id: 3,
-            name: "Dragon's Maw Dungeon",
-            region: "south",
-            type: "dungeon",
-            description: "A volcanic cave system rumored to be the lair of an ancient dragon.",
-            image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "Monsters",
-            ruler: "Unknown",
-            danger: "Extreme",
-            tags: ["Dungeon", "Volcanic", "Dragon"],
+            name: "Porto Draco",
+            region: "modega",
+            type: "city",
+            description: "Uma cidade costeira com lendas e histórias sobre dragões, mas todos sabem que o verdadeiro perigo está no mar.",
+            image: "/images/maps/Draco (1).webp",
+            population: "20,000",
+            ruler: "O Rei Pirata",
+            danger: "Alto",
+            tags: ["Pirates", "Ocean", "Militia"],
             details: {
-                history: "Discovered 50 years ago by dwarf miners.",
-                notable: "Lava rivers, Crystal caverns, Dragon hoard",
-                factions: ["Cult of the Dragon", "Treasure Hunters"]
+                history: "Um dos grandes centros de comércio da Costa da Tormenta, fortemente inflenciada por mercadores e piratas. Porto Draco é um paraíso para aqueles que se dispoem a arriscar suas vidas em suas entranhas mais perigosas. Em tempos recentes uma onde de sequestros assolaram a população mas o mistério foi resolvido graças à Hidra.",
+                notable: "Feira de rua, Navios piratas, Governo de faz de conta",
+                factions: ["Milicia Pirata", "Parlamento de Modega"]
             }
         },
         {
@@ -286,8 +286,8 @@ document.addEventListener('DOMContentLoaded', function() {
         locationsGrid.innerHTML = `
             <div class="no-results">
                 <i class="fas fa-map-marked-alt fa-3x"></i>
-                <h3>No locations found</h3>
-                <p>Try a different search or filter</p>
+                <h3>Região não encontrada</h3>
+                <p>Tente uma nova busca ou filtro</p>
             </div>
         `;
         return;
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="fas ${typeIcons[location.type]}"></i> ${location.type.toUpperCase()}
                         </span>
                         <span class="modal-region">
-                            <i class="fas fa-map-marker-alt"></i> ${location.region.charAt(0).toUpperCase() + location.region.slice(1)} Region
+                            <i class="fas fa-map-marker-alt"></i> Região ${location.region.charAt(0).toUpperCase() + location.region.slice(1)}
                         </span>
                     </div>
                 </div>

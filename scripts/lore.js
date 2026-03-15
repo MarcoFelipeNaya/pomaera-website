@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
         lenda:     { label: 'Lenda',     color: '#f0c040', icon: 'fa-star' },
         cronica:   { label: 'Crônica',   color: '#5b9bd5', icon: 'fa-feather-alt' },
         mundo:      { label: 'Mundo',      color: '#9b59b6', icon: 'fa-dragon' },
-        profecia:  { label: 'Profecia',  color: '#2ecc71', icon: 'fa-eye' }
+        campanhas:  { label: 'Campanhas',  color: '#2ecc71', icon: 'fa-book' }
     };
 
     // =============================================

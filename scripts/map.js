@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             coords: [523, 814],
             name: "Inata",
             region: "âmago",
-            type: "city",
+            type: "cidade",
             desc: "A principal cidade do Âmago e sede do Conselho das Cinco Cidades.",
             link: true
         },
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             coords: [1004, 1047],       // pixel position [top, left]
             name: "Lago Roxo",
             region: "coralia",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
-            type: "wilderness",         // city | town | dungeon | wilderness | ruin
+            type: "natureza",         // city | town | dungeon | wilderness | ruin
             desc: "Um lago que há eras se tornou roxo devido as fortes energias mágicas que emanam dele.",
             link: true            // set false if no locations page entry yet
         },
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
             coords: [381, 1248],       // pixel position [top, left]
             name: "Porto Draco",
             region: "modega",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
-            type: "city",         // city | town | dungeon | wilderness | ruin
+            type: "cidade",         // city | town | dungeon | wilderness | ruin
             desc: "Uma cidade costeira com lendas e histórias sobre dragões, mas todos sabem que o verdadeiro perigo está no mar.",
             link: true            // set false if no locations page entry yet
         },
@@ -97,11 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // TYPE ICONS (Font Awesome class names)
     // =============================================
     const typeIcons = {
-        city:       'fa-city',
-        town:       'fa-home',
-        dungeon:    'fa-dungeon',
-        wilderness: 'fa-tree',
-        ruin:       'fa-monument'
+        cidade:       'fa-city',
+        vila:       'fa-home',
+        masmorra:    'fa-dungeon',
+        natureza: 'fa-tree',
+        ruína:       'fa-monument'
     };
 
     // =============================================

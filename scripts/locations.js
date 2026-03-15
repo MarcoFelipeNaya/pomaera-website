@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${location.tags.map(tag => `<span class="location-tag">${tag}</span>`).join('')}
                     </div>
                     <button class="view-details" data-id="${location.id}">
-                        <i class="fas fa-eye"></i> Details
+                        <i class="fas fa-eye"></i> Detalhes
                     </button>
                 </div>
             </div>

@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
             race: "Catfolk",
             class: "Músico",
             excerpt: "Um animado catfolk que se apresenta como um bardo",
-            backstory: "Adicione aqui a história completa do personagem. Pode ser tão longa quanto necessário — este texto aparece no modal quando o jogador clica em 'Ver Personagem'.",
+            backstory: "Adicione aqui a história completa do personagem.",
             image: "/images/personagens/clovis.webp",
-            player: "Lucas Queiroz",
+            player: "Lucas",
             faction: "Sem facção",
             status: "Falecido"
         },
@@ -41,11 +41,83 @@ document.addEventListener('DOMContentLoaded', function () {
             race: "Anã",
             class: "Echo Knight",
             excerpt: "Uma anã sem família que roubou das pessoas erradas.",
-            backstory: "Adicione aqui a história completa deste personagem.",
+            backstory: "",
             image: "/images/personagens/AnaMachado.webp",
             player: "Thaiane",
             faction: "Caraputangas",
             status: "Falecido"
+        },
+        {
+            id: 3,
+            name: "Asterion Vol'Darthar",
+            race: "Elfo Noturno",
+            class: "Bladesinger",
+            excerpt: "Um elfo noturno que abandonou sua casa ancestral para explorar Pomaera.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Aster.webp",
+            player: "Luan",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 4,
+            name: "Adon & Baladur",
+            race: "Eladrin",
+            class: "Mago",
+            excerpt: "Criado em meio à guerreiros e caçadores, Adon se destaca por sua tranquilidade.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Adon.webp",
+            player: "Gabrix",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 5,
+            name: "Mizzy",
+            race: "Aasimar",
+            class: "Bardo",
+            excerpt: "Um músico fugindo do seu passado e da grande nação de Myr.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Mizzy.webp",
+            player: "Lucas",
+            faction: "Caraputangas",
+            status: "Desaparecido"
+        },
+        {
+            id: 6,
+            name: "Osfyr",
+            race: "Meio-Orc",
+            class: "Gloomstalker",
+            excerpt: "Seja por dinheiro ou vingança, ele busca o que lhe pertence.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Osfyr.webp",
+            player: "Luan",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 7,
+            name: "Venat",
+            race: "Tiefling",
+            class: "Swashbuckler",
+            excerpt: "Temido no mar e em terra firme, suas cimitarras são sua marca.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Venat.webp",
+            player: "Bruno",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 8,
+            name: "Rowena",
+            race: "Elfa",
+            class: "Feiticeira",
+            excerpt: "Saída do Lago do Roxo em busca de vingança ela encontrou algo mais doce.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Rowena.webp",
+            player: "Natalia",
+            faction: "Caraputangas",
+            status: "Aposentado"
         }
     ];
 

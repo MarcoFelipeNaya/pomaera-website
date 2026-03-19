@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Gloomstalker",
             excerpt: "Seja por dinheiro ou vingança, ele busca o que lhe pertence.",
             backstory: "Adicione aqui a história completa deste personagem.",
-            image: "/images/personagens/Osfyr.webp",
+            image: "/images/personagens/osfyrr.webp",
             player: "Luan",
             faction: "Caraputangas",
             status: "Falecido"
@@ -118,6 +118,126 @@ document.addEventListener('DOMContentLoaded', function () {
             player: "Natalia",
             faction: "Caraputangas",
             status: "Aposentado"
+        },
+        {
+            id: 9,
+            name: "Svlphvr ",
+            race: "Humano",
+            class: "Necromante",
+            excerpt: "Nascido no mau ou criado por ele?",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Sulfur.webp",
+            player: "Igor",
+            faction: "Caraputangas",
+            status: "Desaparecido"
+        },
+        {
+            id: 10,
+            name: "Ena",
+            race: "Meio-Elfo",
+            class: "Barbara",
+            excerpt: "Ofericida para alguém, ela tentou fugir do seu destino, mas o destino tem outros planos.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Ena.webp",
+            player: "Bruna",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 11,
+            name: "Claudyna",
+            race: "Meio-Catfolk",
+            class: "Druida",
+            excerpt: "Para muitos uma aberração da natureza, para poucos uma bênção.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Claudyna.webp",
+            player: "Thaiane",
+            faction: "A Hidra",
+            status: "Ativo"
+        },
+        {
+            id: 12,
+            name: "Wyzzer",
+            race: "Halfling",
+            class: "Druida",
+            excerpt: "Uma criança presa entre dois mundos, buscando o seu lugar neles.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Wyzzer.webp",
+            player: "Luan",
+            faction: "Caraputangas",
+            status: "Aposentado"
+        },
+        {
+            id: 14,
+            name: "Power",
+            race: "Humana",
+            class: "Ranger",
+            excerpt: "Vítima dos Caraputangas ela buscou vingança mas encontrou um grupo de pessoas que prometeram contar tudo.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Power.webp",
+            player: "Natalia",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 15,
+            name: "Auron",
+            race: "Meio-Genasi",
+            class: "Paladino",
+            excerpt: "Vindo do Norte, duas vezes traído por quem amava.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/AuronTatuado.webp",
+            player: "Luan",
+            faction: "A Hidra",
+            status: "Aposentado"
+        },
+        {
+            id: 16,
+            name: "Rocket",
+            race: "Tiefling",
+            class: "Paladino",
+            excerpt: "Vinda do Norte, duas vezes abandonada por quem amava.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Rocket.webp",
+            player: "Natalia",
+            faction: "A Hidra",
+            status: "Aposentado"
+        },
+        {
+            id: 17,
+            name: "Jerônimo",
+            race: "Elfo das Neves",
+            class: "Bruxo",
+            excerpt: "Pego em uma situação inesperada com um aliado inesperado, esse jovem está fazendo de tudo para ajudar.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Gari.webp",
+            player: "Lucas",
+            faction: "A Hidra",
+            status: "Ativo"
+        },
+        {
+            id: 18,
+            name: "Kass",
+            race: "Aasimar",
+            class: "Clérigo/Bruxo",
+            excerpt: "Devoto a Selene, ele é sua espada e seu escudo.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Kass.webp",
+            player: "Gabrix",
+            faction: "A Hidra",
+            status: "Ativo"
+        },
+        {
+            id: 19,
+            name: "Krissa",
+            race: "Tiefling",
+            class: "Hexblader",
+            excerpt: "Coberta de segredos e tramas obscuras, tentando traze luz para os perdidos.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Krissa.webp",
+            player: "Bruno",
+            faction: "A Hidra",
+            status: "Ativo"
         }
     ];
 
@@ -147,7 +267,6 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     // =============================================
-    // STATUS CONFIG
     // EXPLANATION: Each status gets its own colour so players can
     // see at a glance if a character is alive, dead, or missing.
     // =============================================

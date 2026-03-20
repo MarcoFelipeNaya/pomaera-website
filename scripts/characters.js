@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
             class: "Ranger",
             excerpt: "Vítima dos Caraputangas ela buscou vingança mas encontrou um grupo de pessoas que prometeram contar tudo.",
             backstory: "Adicione aqui a história completa deste personagem.",
-            image: "/images/personagens/Power.webp",
+            image: "/images/personagens/Placeholder.webp",
             player: "Natalia",
             faction: "Caraputangas",
             status: "Falecido"
@@ -238,6 +238,234 @@ document.addEventListener('DOMContentLoaded', function () {
             player: "Bruno",
             faction: "A Hidra",
             status: "Ativo"
+        },
+        {
+            id: 20,
+            name: "Nostalgia",
+            race: "Genasi de Pedra",
+            class: "Pintor",
+            excerpt: "Sem memórias e perdido no mundo, apenas seu sangue é uma pista.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Nostalgia.webp",
+            player: "Laysa",
+            faction: "A Hidra",
+            status: "Ativo"
+        },
+        {
+            id: 21,
+            name: "Elementari",
+            race: "Elfa",
+            class: "Druida",
+            excerpt: "Crescida com riquezas e falta de atenção, buscou nas estrelas aquilo que faltava.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Elementari.webp",
+            player: "Laysa",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 22,
+            name: "Domitila",
+            race: "Humana",
+            class: "Bloodhunter",
+            excerpt: "Buscando se livrar da maldição da família, tanto a tangível como a intangível.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Domi.webp",
+            player: "Thaiane",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 23,
+            name: "Tina",
+            race: "Humana",
+            class: "Bardo",
+            excerpt: "Cansada de sua vida na fazenda da família e com um livro estranho ao seu lado, ela busca um novo propósito.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Tina.webp",
+            player: "Luan",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 24,
+            name: "Jocelyn",
+            race: "Meio-Elfa",
+            class: "Ladina",
+            excerpt: "Cruzou Pomaera para arrastar o irmão para casa, para que ambos possam dar o último adeus a sua mãe.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Jocelyn.webp",
+            player: "Marco",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 25,
+            name: "Passo Sombrio",
+            race: "Tiefling",
+            class: "Ladina/Bruxa",
+            excerpt: "Presa entre familía e dever, talvez tenha que lidar com essa escolha pelo resto da vida.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Natalia",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 26,
+            name: "Eldrin",
+            race: "Elfo das Neves",
+            class: "Mago",
+            excerpt: "Obcecado pelo seu deus, no fim encontrou coisas mais importantes.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Kelvin",
+            faction: "As Lobas",
+            status: "Aposentado"
+        },
+        {
+            id: 27,
+            name: "Ater",
+            race: "Elfo das Neves",
+            class: "Soulknife",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Ater.webp",
+            player: "Gabrix",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 28,
+            name: "Carcará",
+            race: "Meio-Elfo",
+            class: "Pirata",
+            excerpt: "Traído e abandonado ele buscou por forças obscuras para realizar sua vingança.",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Lucas",
+            faction: "Caraputangas",
+            status: "Falecido"
+        },
+        {
+            id: 29,
+            name: "Ikarus",
+            race: "Halfling",
+            class: "Lutador",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Ikarus.webp",
+            player: "Luan",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 30,
+            name: "Noira",
+            race: "Humana",
+            class: "Feiticeira",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Noira.webp",
+            player: "Natalia",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 31,
+            name: "Therion",
+            race: "Elfo das Neves",
+            class: "Ranger",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Therion.webp",
+            player: "Bruno",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 32,
+            name: "Amadeus",
+            race: "Elfo das Neves",
+            class: "Druida",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Amadeus.webp",
+            player: "Lucas",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 33,
+            name: "Susan",
+            race: "Anã",
+            class: "Echo Knight",
+            excerpt: "...",
+            backstory: "Adicione aqui a história completa deste personagem.",
+            image: "/images/personagens/Susan.webp",
+            player: "Thaiane",
+            faction: "Sem Nome",
+            status: "Ativo"
+        },
+        {
+            id: 34,
+            name: "Icaro",
+            race: "Tiefling",
+            class: "Sorlock",
+            excerpt: "Seguidor de uma Demônio, ele buscou poder para sua mãe.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Gabrix",
+            faction: "Sem Nome",
+            status: "Aposentado"
+        },
+        {
+            id: 35,
+            name: "Aelin",
+            race: "Elfa",
+            class: "Guerreira",
+            excerpt: "Vinda de Faéria para caças coisas mais importantes do que monstros.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Thaiane",
+            faction: "Sem Nome",
+            status: "Aposentado"
+        },
+        {
+            id: 36,
+            name: "Sylim",
+            race: "Elfa",
+            class: "Clériga",
+            excerpt: "Uma jovem que se foi cedo demais.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Thaiane",
+            faction: "Sem Nome",
+            status: "Falecida"
+        },
+        {
+            id: 37,
+            name: "Julho",
+            race: "Halfling",
+            class: "Druida",
+            excerpt: "Ele navegou por águas que ninguém da sua família jamais imaginou.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Lucas",
+            faction: "Sem Nome",
+            status: "Aposentado"
+        },
+        {
+            id: 38,
+            name: "Zatsi",
+            race: "Meio-Yuan-Ti",
+            class: "Feiticeiro",
+            excerpt: "Trouxe o seu povo para um lugar apenas deles.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Lucas",
+            faction: "Sem Nome",
+            status: "Aposentado"
         }
     ];
 
@@ -311,7 +539,11 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        characters.forEach((character, index) => {
+        const sortedCharacters = [...characters].sort((a, b) => 
+            a.name.localeCompare(b.name, 'pt-BR')
+        );
+        
+        sortedCharacters.forEach((character, index) => {
             const card = createCard(character, type, index);
             grid.appendChild(card);
         });
@@ -437,7 +669,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 <div class="modal-info-section">
                     <h3><i class="fas fa-scroll"></i> História</h3>
-                    <p>${character.backstory}</p>
+                    <p>${character.excerpt}</p>
                 </div>
 
                 ${playerSection}

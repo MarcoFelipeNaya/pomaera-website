@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
             excerpt: "Sem memórias e perdido no mundo, apenas seu sangue é uma pista.",
             backstory: "Adicione aqui a história completa deste personagem.",
             image: "/images/personagens/Nostalgia.webp",
-            player: "Laysa",
+            player: "Lay",
             faction: "A Hidra",
             status: "Ativo"
         },
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
             excerpt: "Crescida com riquezas e falta de atenção, buscou nas estrelas aquilo que faltava.",
             backstory: "Adicione aqui a história completa deste personagem.",
             image: "/images/personagens/Elementari.webp",
-            player: "Laysa",
+            player: "Lay",
             faction: "As Lobas",
             status: "Aposentado"
         },

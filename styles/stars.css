@@ -1,0 +1,128 @@
+.stars-hero {
+    min-height: 380px;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.95)),
+        url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1470&auto=format&fit=crop')
+        center/cover no-repeat scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--accent-gold);
+    position: relative;
+}
+
+.stars-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(251, 191, 36, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+.stars-hero-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.stars-hero-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stars-hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+}
+
+.stars-hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.star-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+
+/* Stars Grid */
+.stars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stars-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.star-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.star-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.star-card:hover {
+    border-color: var(--accent-purple);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.star-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.star-content {
+    padding: 1.5rem;
+}
+
+.star-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.star-name {
+    color: var(--accent-gold);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+}
+
+.star-description {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}

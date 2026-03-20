@@ -1,5 +1,3 @@
-// lore.js - Interactive features for the Lore page
-
 document.addEventListener('DOMContentLoaded', function () {
 
     // =============================================
@@ -92,7 +90,20 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             author: "Lucas Queiroz",
             readTime: 2
+        },
+        {
+            id: 5,
+            title: "Campanha Teste",
+            category: "campanhas",
+            excerpt: "Esta é uma campanha teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'campanhas' para mostrar como as campanhas serão categorizadas e filtradas.",
+            fullText: [
+                "Esta é uma campanha teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'campanhas' para mostrar como as campanhas serão categorizadas e filtradas.",
+            ],
+            author: "Marco",
+            readTime: 1
+
         }
+        
         
     ];
 
@@ -189,12 +200,12 @@ document.addEventListener('DOMContentLoaded', function () {
             loreGrid.appendChild(card);
         });
 
-        // Trigger fade-in only for visible cards
-        setTimeout(() => {
-            loreGrid.querySelectorAll('.lore-card:not(.hidden-card)').forEach(card => {
-                card.style.animationPlayState = 'running';
-            });
-        }, 50);
+            // Trigger fade-in only for visible cards
+            setTimeout(() => {
+                loreGrid.querySelectorAll('.lore-card:not(.hidden-card)').forEach(card => {
+                    card.style.animationPlayState = 'running';
+                });
+            }, 50);
 
         // Show more button
         if (entries.length > initialCount) {
@@ -313,6 +324,15 @@ document.addEventListener('DOMContentLoaded', function () {
             loreModal.style.display = 'none';
         }
     });
+
+    // Check if a filter was passed in the URL (e.g. ?filter=lenda)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlFilter = urlParams.get('filter');
+        if (urlFilter) {
+            // Find and click the matching filter button
+            const matchingTag = document.querySelector(`.filter-tag[data-filter="${urlFilter}"]`);
+            if (matchingTag) matchingTag.click();
+    }
 
     console.log(`%c Lore Page Loaded! 📖`, `color: #fbbf24; font-size: 16px; font-weight: bold;`);
     console.log(`%c ${loreEntries.length} entries in the archives`, `color: #94a3b8; font-size: 14px;`);

@@ -24,10 +24,11 @@
 }
 
 .locations-hero-content h1 {
-    font-size: 3.5rem;
+    font-family: 'Cinzel', serif;
+    font-size: 3.2rem;
     margin-bottom: 1rem;
     color: var(--accent-gold);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
 }
 
 .locations-hero-content p {

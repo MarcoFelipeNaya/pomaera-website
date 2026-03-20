@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "/images/personagens/Adon.webp",
             player: "Gabrix",
             faction: "Caraputangas",
-            status: "Falecido"
+            status: "Desaparecido"
         },
         {
             id: 5,
@@ -466,6 +466,90 @@ document.addEventListener('DOMContentLoaded', function () {
             player: "Lucas",
             faction: "Sem Nome",
             status: "Aposentado"
+        },
+        {
+            id: 39,
+            name: "Albert",
+            race: "Firbolg",
+            class: "Guarda",
+            excerpt: "Fugiu da sua triba e dos seus deveres.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Marco",
+            faction: "Os Firbolgs de Myr",
+            status: "Falecido"
+        },
+        {
+            id: 40,
+            name: "Inocêncio",
+            race: "Firbolg",
+            class: "Shaman",
+            excerpt: "Sempre perdido, distraido com plantas e crianças.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Elom",
+            faction: "Os Firbolgs de Myr",
+            status: "Desaparecido"
+        },
+        {
+            id: 41,
+            name: "Horácio",
+            race: "Firbolg",
+            class: "Marceneiro",
+            excerpt: "Compelido pelo instinto, muitas vezes agia sem pensar.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Igor",
+            faction: "Os Firbolgs de Myr",
+            status: "Desaparecido"
+        },
+        {
+            id: 42,
+            name: "Lara",
+            race: "Firbolg",
+            class: "Maga",
+            excerpt: "...",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Jéssica",
+            faction: "Os Firbolgs de Myr",
+            status: "Desaparecido"
+        },
+        {
+            id: 43,
+            name: "Miriel",
+            race: "Elfo",
+            class: "Estudioso",
+            excerpt: "...",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Kumon",
+            faction: "Os Firbolgs de Myr",
+            status: "Desaparecido"
+        },
+        {
+            id: 44,
+            name: "Thorne",
+            race: "Humana",
+            class: "Guarda",
+            excerpt: "...",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Marco",
+            faction: "Os Firbolgs de Myr",
+            status: "Desaparecido"
+        },
+        {
+            id: 45,
+            name: "Zova",
+            race: "Meio-Orc",
+            class: "Guerreira",
+            excerpt: "Focada em dinheiro e tesouros descobriu que a amizade valia mais.",
+            backstory: ".",
+            image: "/images/personagens/Placeholder.webp",
+            player: "Beatriz",
+            faction: "Sem Nome",
+            status: "Aposentado"
         }
     ];
 
@@ -542,7 +626,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const sortedCharacters = [...characters].sort((a, b) => 
             a.name.localeCompare(b.name, 'pt-BR')
         );
-        
+
         sortedCharacters.forEach((character, index) => {
             const card = createCard(character, type, index);
             grid.appendChild(card);

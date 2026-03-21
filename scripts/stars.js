@@ -6,16 +6,73 @@ document.addEventListener('DOMContentLoaded', function () {
   const stars = [
     {
       id: 1,
-      name: "Star 1",
-      description: "Description for Star 1",
-      image: "path/to/star1.jpg"
+      name: "A Medusa",
+      description: "A visibilidade das estrelas desta constelação varia muito durante o ano. Os observadores do céu dizem que somente os pescadores de estrelas conseguem identificá-la no enorme mar do cosmos.",
+      image: "/images/stars/st_Medusa.webp"
     },
     {
       id: 2,
-      name: "Star 2",
-      description: "Description for Star 2",
-      image: "path/to/star2.jpg"
+      name: "A Maçã",
+      description: "As 'sementes' da maçã são um na verdade duas estrelas em sistema binário, onde uma orbita em torno da outra. Isto faz com que em diferentes épocas do ano, a maçã apresente apenas uma semente. Povos antigos de Corália acreditavam que a quantidade de sementes nessa constelação ditava quão farta seria a safra daquele mês.",
+      image: "/images/stars/st_Maca.webp"
+    },
+    {
+      id: 3,
+      name: "A Âncora",
+      description: "Chamada de A Âncora pela Costa da Tormenta e Modega. Também conhecida como A Flecha pelos povos nortenhos.",
+      image: "/images/stars/st_Ancora.webp"
+    },
+    {
+      id: 4,
+      name: "O Leão",
+      description: "Dizem as antigas lendas que Selene tem um mítico leão prateado com uma juba majestal. Esta constelação representa este animal lendário.",
+      image: "/images/stars/st_Leao.webp"
+    },
+    {
+      id: 5,
+      name: "A Mão",
+      description: "Também chamada de O Pavão pelos catfolk que não tem uma mão humanoide e portanto não concordam com tal associação.",
+      image: "/images/stars/st_Mao.webp"
+    },
+    {
+      id: 6,
+      name: "O Colibri",
+      description: "",
+      image: "/images/stars/st_Colibri.webp"
+    },
+    {
+      id: 7,
+      name: "O Ninho",
+      description: "Também conhecida como O Pão pelos novos povos de Tariniel, devido ao fato de que os sereianos e submersos não tinham contato com aves até um passado recente.",
+      image: "/images/stars/st_Ninho.webp"
+    },
+    {
+      id: 8,
+      name: "O Barco",
+      description: "",
+      image: "/images/stars/st_Barco.webp"
+    },
+    {
+      id: 9,
+      name: "O Dragão",
+      description: "",
+      image: "/images/stars/st_Dragao.webp"
+    },
+    {
+      id: 10,
+      name: "O Cetro",
+      description: "",
+      image: "/images/stars/st_Cetro.webp"
+    },
+    {
+      id: 11,
+      name: "A Mãe/A Viúva",
+      description: "",
+      image: "/images/stars/st_Mae.webp"
     }
+
+
+
   ];
   //==============================================
   //DOM ELEMENTS

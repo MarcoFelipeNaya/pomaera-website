@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="star-header">
           <h3 class="star-name">${star.name}</h3>
           </div>
+          <div class="star-divider"></div>
           <p class="star-description">${star.description}</p>
       </div>
     `;

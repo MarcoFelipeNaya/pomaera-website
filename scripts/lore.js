@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // EXPLANATION: Each story is an object in this array.
     // To add a new story, just copy one object and fill in the fields.
     // Fields:
-    //   id        — unique number, never repeat
-    //   title     — story title (shown on card and modal)
-    //   category  — must match a data-filter value in lore.html
-    //               options: "historia", "lenda", "cronica", "mito", "profecia"
-    //   excerpt   — short teaser shown on the card (1-2 sentences)
-    //   fullText  — full story as an array of paragraphs (each string = one <p>)
-    //   author    — who wrote or narrated it (in-world or real)
-    //   readTime  — estimated read time in minutes (rough guide: 200 words/min)
+    /*
+       id:
+       title:
+       category:"historia", "lenda", "cronica", "mito", "profecia"
+       excerpt:
+       fullText:
+       author:
+       readTime:
+    */
     // =============================================
     const loreEntries = [
         {
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ,{
             id: 3,
             title: "A gaivota",
-            category: "historia",
+            category: "lenda",
             excerpt: "Nas redondezas de Lândano, há uma pequena vila costeira que se chama Apoeia. É uma vila de pescadores, a quantidade de casas pode ser contadas nos dedos das mãos.",
             fullText: [
                 "Nas redondezas de Lândano, há uma pequena vila costeira que se chama Apoeia. É uma vila de pescadores, a quantidade de casas pode ser contadas nos dedos das mãos. Suel era uma pequena genasi da terra que ali morava com seu pai, devia ter seus 7 anos quando ao olhar para o oceano viu surgindo do horizonte uma gaivota que trazia um pequeno embrulho em suas patas. Como se houvesse um dever cívico, pousou aos pés de Suel e ali deixou o pacote. A criança, sem hesitar, logo desembrulhou o objeto que revelara ser uma pequena garrafa de vidro com uma carta dentro.",
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: "historia",
             excerpt: "Este é um conto conhecido em todo Âmago, desde o escaldar de Pieco até as geleiras em Luna. É uma história singela e mística.",
             fullText: [
+                "Este é um conto conhecido em todo Âmago, desde o escaldar de Pieco até as geleiras em Luna. É uma história singela e mística.",
                 "Não se sabe ao certo onde, mas o quando é preciso. Era o terceiro dia do agouro e o mês não estava fácil. Para a pequena vila, o começo do inverno estava sendo especialmente rigoroso. As nevascas começaram mais cedo neste ano específico, e os animais da vila, principalmente as ovelhas estavam sofrendo muito. A neve chegava a 2 metros de profundidade e algumas famílias estavam ficando isoladas na neve, sem comida e sem saída. As famílias sofreriam este ano.",
                 "Assim que ao por do sol daquele dia terrível, a nevasca cessou bruscamente. E a vila recebeu a visita de três figuras etéreas, quase mágicas. Eram três figuras humanoides, mas pareciam flutuar no ar. E brilhavam. As figuras embasbacavam os aldeões. Eram três, e mesmo sem saber, seus nomes eram claros para todos: Aniel, Lauriel e Isbel.",
                 "Aniel derreteu a neve, desatolou as carroças, desemperrou as portas, libertou as casas. Lauriel, juntou as ovelhas, resgatou as plantas, reuniu famílias. E Isbel clareou o céu, iluminou as tochas e aqueceu a vila.",
@@ -101,7 +103,60 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             author: "Marco",
             readTime: 1
-
+        },
+        {
+            id: 6,
+            title: "Lenda Teste",
+            category:"lenda",
+            excerpt:"Esta é uma lenda teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'lendas' para mostrar como as lendas serão categorizadas e filtradas.",
+            fullText:"Esta é uma lenda teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'lendas' para mostrar como as lendas serão categorizadas e filtradas.",
+            author: "Marco",
+            readTime: 1
+        },
+        {
+            id: 7,
+            title: "Crônica Teste",
+            category:"cronica",
+            excerpt:"Esta é uma crônica teste para mostrar como as crônicas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'crônicas' para mostrar como as crônicas serão categorizadas e filtradas.",
+            fullText:"Esta é uma crônica teste para mostrar como as crônicas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'crônicas' para mostrar como as crônicas serão categorizadas e filtradas.",
+            author: "Marco",
+            readTime: 1
+        },
+        {
+            id: 8,
+            title: "Mundo Teste",
+            category:"mundo",
+            excerpt:"Esta é um mundo teste para mostrar como os mundos aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'mundo' para mostrar como as crônicas serão categorizadas e filtradas.",
+            fullText:"Esta é uma mundo teste para mostrar como as mundo aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'mundo' para mostrar como as crônicas serão categorizadas e filtradas.",
+            author: "Marco",
+            readTime: 1
+        },
+        {
+            id: 9,
+            title: "O Fim, o Recomeço eo Esquecimento",
+            category:"lenda",
+            excerpt:"Essas palavras são sinônimos dos antigos deuses Artesãos Sami, Ori e Erti.",
+            fullText:[
+                "Essas palavras são sinônimos dos antigos deuses Artesãos Sami, Ori e Erti.",
+                "Em tempos passados, quando os deuses ainda caminhavam entre os mortais, esses três irmãos divinos assumiram a responsabilidade de erguer a mais grandiosa fortaleza em Inata.",
+                "Esse local sagrado seria o palco onde a união dos povos de Pomaera seria discutida e fortalecida.",
+                "Os deuses Artesãos eram trigêmeos, cada um com uma especialidade única. Sami, o mestre da forja, moldava metal e fogo em armas, ferramentas e artefatos de poder incomparável.",
+                "Ori, o gênio da arquitetura, projetava estruturas grandiosas que desafiavam o tempo e revelavam a beleza divina. Erti, o mais jovem, era o mestre da construção e das confecções; ele erguia essas estruturas com precisão e habilidade, transformando os projetos de Ori em monumentos duradouros, utilizando as ferramentas criadas por Sami.",
+                "Juntos, os três irmãos combinavam suas artes para criar verdadeiras maravilhas, deixando um legado que transcendeu o tempo. Apesar de sua união e poder, os deuses não estavam imunes aos erros. Erti, o mais jovem dos três, era conhecido por sua habilidade na construção, mas também por sua impaciência.",
+                "Em uma ocasião fatídica, durante a criação da fortaleza, Erti estava ansioso para provar seu valor e superar as expectativas de seus irmãos mais velhos. Sami, o mestre da forja, estava trabalhando em uma poderosa arma destinada a proteger a fortaleza e avisou Erti que o processo de resfriamento do metal era delicado e perigoso, exigindo tempo e cuidado.",
+                "No entanto, impaciente para ver a fortaleza concluída, Erti ignorou as advertências de Sami e decidiu acelerar o processo. Sem esperar o metal esfriar naturalmente, Erti começou a erguer a estrutura da forja.",
+                "O calor e a instabilidade do metal ainda incandescente geraram uma explosão inesperada devido a uma falha no manuseio. Sami, tentando proteger seu irmão mais novo da catástrofe, foi atingido por fragmentos de metal em brasa.",
+                "Apesar de sua divindade, a ferida foi fatal para Sami, levando assim ao seu fim. Em seu último suspiro, ele perdoou Erti, que caiu em profundo remorso. A morte de Sami abalou os irmãos sobreviventes e trouxe uma lição sobre a importância da paciência e do respeito ao processo criativo.",
+                "Desde então, Erti carregou o peso de sua impaciência, e a fortaleza em Inata, que deveria ser um símbolo de união, tornou-se também um memorial para o sacrifício de Sami.",
+                "Desolados pela perda do irmão, Ori e Erti seguiram caminhos distintos. Ori, agora o mais velho, mergulhou no luto, afundando-se em suas obrigações e buscando consolo na rotina, desejando que Erti fizesse o mesmo. No entanto, Erti, consumido pela culpa, mergulhou em uma depressão profunda, incapaz de seguir em frente. Preso pelo remorso, ele se viu paralisado, assombrado pela tragédia que causou.",
+                "Sem saber mais o que fazer, Erti recorreu a Memento, a deusa que domina as lembranças. Desesperado, implorou para que ela removesse o que tanto o afligia, pedindo até mesmo para esquecer sua própria divindade.",
+                "Inicialmente, Memento hesitou, reconhecendo a radicalidade do pedido. Ela tentou explicar as consequências desse ato, mas o jovem deus, em sua angústia, não queria ouvir. Movida pela compaixão, Memento aceitou as memórias de Erti em troca e apagou dele a lembrança de que um dia fora um ser divino.",
+                "Desde então, Erti desapareceu dos olhos dos deuses, tornando-se apenas mais um mortal sem conhecimento de seu passado. Ele passou a viver como um ser comum nas terras de Pomaera, fadado ao esquecimento. Ori, agora o único sobrevivente entre os trigêmeos, foi tomado por uma fúria imensa e partiu em busca de Memento, determinado a recuperar o irmão que tanto amava. Ao encontrá-la, a deusa explicou que havia respeitado a decisão de Erti e que ele deveria fazer o mesmo. Enfurecido e inconformado, Ori atacou Memento, tentando roubar o relógio onde ela guardava as memórias que lhe eram confiadas.",
+                "Durante a luta, Ori acabou danificando o relógio de Memento, e, em retaliação, ela danificou o triângulo que Ori carregava, símbolo da união dos irmãos. A deusa, furiosa com a ousadia, declarou que, agora, mesmo que quisesse, não poderia controlar as memórias, e que o dano era irreversível, não podendo ser desfeito. Ela disse a Ori que, diante do fim e do esquecimento, ele teria que aprender a recomeçar, por mais doloroso que fosse.",
+                "Em um gesto final de desdém, Memento expulsou Ori de seu templo, afirmando que, mesmo que ele tentasse, sempre sentiria um vazio profundo, incapaz de recordar e unir os três domínios ao mesmo tempo. Desde então, o Templo dos Artesãos carrega uma maldição visível e simbólica. Quem o visita percebe que algo está sempre faltando: se o templo exibe uma estrutura impecável, a decoração é desleixada, se a decoração é primorosa, a estrutura revela fragilidade e instabilidade. Assim, o templo reflete a maldição da deusa, simbolizando a eternidade da insuficiência e da perda das memórias, um lembrete constante do fardo que ele jamais conseguirá superar.",
+            ],
+            author: "Lay",
+            readTime: 6
         }
         
         

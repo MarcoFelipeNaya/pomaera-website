@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 10,
       name: "O Cetro",
-      description: "",
+      description: "A gigante vermelha na extremidade desta constelação foi um prato cheio para Myr apropriar-se desta configuração de astros. Muitos idosos myrianos dizem que a anã branca e a gigante vermelha predizem qual será o regime de governo da nova monarca.",
       image: "/images/stars/st_Cetro.webp"
     },
     {
       id: 11,
       name: "A Mãe/A Viúva",
-      description: "",
+      description: "A estrela mais brilhante do céu noturno de Pomaera é conhecida amplamente no continente como A Mãe ou A Viúva. Ela é facilmente identificada ao norte da constelação d'O Ninho. Uma anã branca com visibilidade imprevisível sempre acompanha este astro. Quando uma família perde um ente querido, geralmente dizem que ele está no abraço da mãe e apontam a anã branca como a representação deste parente no céu.",
       image: "/images/stars/st_Mae.webp"
     }
 

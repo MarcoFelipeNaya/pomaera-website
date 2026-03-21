@@ -128,3 +128,29 @@
     margin-bottom: 1rem;
     line-height: 1.5;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hero */
+    .locations-hero {
+        height: auto;
+        min-height: 300px;
+        background-attachment: scroll; 
+        padding: 3rem 1rem;
+    }
+
+    .locations-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .locations-hero-content p {
+        font-size: 1rem;
+    }
+
+    /* stars cards */
+    .stars-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}

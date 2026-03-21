@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             id: 3,
-            name: "Asterion Vol'Darthar",
+            name: "Asterion",
             race: "Elfo Noturno",
             class: "Bladesinger",
             excerpt: "Um elfo noturno que abandonou sua casa ancestral para explorar Pomaera.",
@@ -647,15 +647,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Both share the same card structure so the grid looks consistent.
     // =============================================
     function createCard(character, type, index) {
+        const status = statusConfig[character.status] || statusConfig["Ativo"];
+        
         const card = document.createElement('div');
         card.className = 'character-card';
         card.style.animationDelay = `${index * 0.08}s`;
         card.style.animationPlayState = 'paused';
+        card.style.setProperty('--status-color', status.color);
 
-        const status = statusConfig[character.status] || statusConfig["Ativo"];
+        
 
         const badgeClass = type === 'pc' ? 'badge-pc' : 'badge-npc';
-        const badgeLabel = type === 'pc' ? 'Jogador' : 'NPC';
+        const badgeLabel = type === 'pc' ? 'PC' : 'NPC';
 
         // Bottom info differs for PC vs NPC
         const footerLeft = type === 'pc'

@@ -216,6 +216,25 @@
     font-size: 0.85rem;
 }
 
+.gods-section {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.gods-section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Responsive Design */
 @keyframes fadeInUp {
     to {

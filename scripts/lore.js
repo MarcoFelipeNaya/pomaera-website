@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // To add a new story, just copy one object and fill in the fields.
     // Fields:
     /*
-       id:
-       title:
+       id: "",
+       title: "",
        category:"historia", "lenda", "cronica", "mito", "profecia"
-       excerpt:
-       fullText:
-       author:
+       excerpt: "",
+       fullText: [
+            "",
+       ]
+       author: "",
        readTime:
     */
     // =============================================
@@ -163,9 +165,55 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             author: "Lay",
             readTime: 6
+        },
+        {
+            id: 10,
+            title: "Moedas",
+            category: "historia",
+            excerpt: "Em Pomaera as moedas principais podem ser dividas em três",
+            fullText: [
+                 "Em Pomaera as moedas principais podem ser divididas em três: as moedas de ouro são conhecidas como Trincos e são amplamente utilizadas por todos em Pomaera, a cunhagem atual do Trinco tem o símbolo da Árvore da Vida, a flor de bordô de Myr e a Coruja dos Pétrio. E possuem o formato triangular com um furo no meio, facilitanto o carregamento e a contagem.",
+                 "img:/images/lore/trincos.webp",
+                 "As moedas de prata também conhecidas como Talentos, são mais abundantes, sua cunhagem é feita com o símbolo da Árvore da Vida, as moedas são cortadas diretamente de barras de prata e portanto possuem o formato de trapézio, comumente dado como gorgetas para bardos e cantores e portanto ganhou o nome de talento.",
+                 "img:/images/lore/talentos.webp",
+                 "Os Aros como são conhecidas as moedas de cobre em Pomaera são pequenos e finos aros que possuem pouco valor monetário mas se tornou uma necessidade para evitar preços absurdos entre o popular",
+                 "img:/images/lore/aros.webp",
+                 "Pomaera também possui uma quarta moeda, a Coroa, é uma moeda antiga e que entrou em desuso, hoje a maior parte da sua utilização é em negócios ilegais, principalemente na Costa da Tormenta, embora alguns negócios legitimos ainda sejam feitos em Myr pelo mais tradicionalistas. Ela possuem um formato oval, já que muitas vem de perólas encontradas no Mar Pioneiro",
+                 "img:/images/lore/coroas.webp",
+            ],
+            author: "Lucas Queiroz & Marco",
+            readTime: 2
+        },
+        {
+            id: 11,
+            title: "Idiomas",
+            category:"historia",
+            excerpt: "Aqui colocamos uma lista dos principais idiomas falados em Pomaera.",
+            fullText: [
+                    "Aqui colocamos uma lista dos principais idiomas falados em Pomaera. Não exitem línguas especificas de cada raça, mas fique em paz! Certamente, com as descrições abaixo, você encontrará as línguas que te apeteçam e te façam ter mais vontade de ser poliglota!",
+                    "Legenda: (X)<(Y) significa que há mútua inteligibilidade entre a língua X e a língua Y, onde falantes de Y entendem melhor a língua X.",
+                    "Comum (C) - Língua comum de Pomaera, originária dos primeiros povos de Âmago e espalhada por toda Pomaera na era de globalização.",
+                    "Faérico (F) - Língua do plano de Faérea, bastante falada pelos povos élficos, tem ocorrência em todo território de Pomaera.",
+                    "Qhori (Q)- Língua originada no plano Quori e antiga língua falada no território de MyrTariniel nas primeiras eras.",
+                    "Qhoriel (Ql)<(Q) - Língua moderna derivada do Qhori. Ocorre no território de Tariniel como língua oficial e em Myr entre as famílias mais tradicionais.",
+                    "Corié (Qé)<(Ql)<(Q) - Língua oficial de Myr. Tem o vocabulário principalmente embasado nas raízes das línguas Qhoriel e Comum, instaurada em Myr depois da guerra como ato político de desassociação cultural com Tariniel.",
+                    "Infernal (I) - Língua do plano infernal, não ocorre muito em Pomaera. Falada principalmente por seres como demônios e diabos.",
+                    "Tiferal (Tf)<(I) - Língua descendente de Infernal, falada principalmente pelos povos tiferinos tradicionais.",
+                    "Aquan (Aq) - Língua dos povos abissais, oriundos das profundezas do Mar Negro.",
+                    "Laguan (Lq)<(Aq) - Língua derivada do Aquan, geralmente falada por sereianos.",
+                    "Saduan (Sq)<(Aq) - Criolo falado principalmente pelos submersos recém-libertos. Ocorre muito raramente fora das comunidades de submersos por ser considerada uma língua escrava. Ininteligível fora da água.",
+                    "Alto Coralião (CR) - Língua de Corália. Falado em todo o território do reino, sendo a língua normativa.",
+                    "Coralião da Falha (CRf)<>(CR) - Dialeto do Coralião falado abaixo da Falha de Corália.",
+                    "Trova (Tr) - Língua secreta que é utilizada pelas pessoas que fazem negócios com os filibusteiros da Costa da Tormenta.",
+                    "Modegano (Mg) - Língua oficial do estado de Modega.",
+                    "Landanês (Ld) - Língua regional de Luna. Ocorre especialmente na região norte do país, em torno da Coroa Celeste.",
+                    "Silvo de Pieco (Pi) - Língua com sons estridentes e assovios criada pelos povos antigos de Pieco para comunicação nas travessias do deserto.",
+                    "Lebriano (Lb) - Língua dos povos Lébrios originários do sul de Myr.",
+                    "Ainda existem outras linguagens mais específicas como o Druidico e Thieves Cant.",
+            ],
+            author: "Lucas Queiroz",
+            readTime: 2
         }
-        
-        
     ];
 
     const categoryConfig = {
@@ -337,7 +385,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const config = categoryConfig[entry.category] || { label: entry.category, color: '#8b5cf6', icon: 'fa-book' };
 
         const paragraphs = entry.fullText
-            .map(p => `<p>${p}</p>`)
+            .map(p => {
+                if (p.startsWith('img:')) {
+                    const src = p.replace('img:', '');
+                    return `<img class="lore-inline-image" src="${src}" alt="">`;
+                }
+                return `<p>${p}</p>`;
+                })
             .join('');
 
         loreModalBody.innerHTML = `
@@ -386,14 +440,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Check if a filter was passed in the URL (e.g. ?filter=lenda)
+    // Check if a filter was passed in the URL (e.g. ?filter=lenda or ?open=1)
     const urlParams = new URLSearchParams(window.location.search);
-    const urlFilter = urlParams.get('filter');
-        if (urlFilter) {
-            // Find and click the matching filter button
+
+        const urlFilter = urlParams.get('filter');
+            if (urlFilter) {
             const matchingTag = document.querySelector(`.filter-tag[data-filter="${urlFilter}"]`);
             if (matchingTag) matchingTag.click();
-    }
+        }
+
+        const urlOpen = urlParams.get('open');
+            if (urlOpen) {
+            const id = parseInt(urlOpen);
+            document.querySelectorAll('.hidden-card').forEach(c => {
+                c.classList.remove('hidden-card');
+            });
+            openModal(id);
+        }
 
     console.log(`%c Lore Page Loaded! 📖`, `color: #fbbf24; font-size: 16px; font-weight: bold;`);
     console.log(`%c ${loreEntries.length} entries in the archives`, `color: #94a3b8; font-size: 14px;`);

@@ -410,6 +410,16 @@
     margin-bottom: 1.4rem;
 }
 
+.lore-inline-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    opacity: 0.9;
+}
+
 
 .close-lore-modal {
     position: fixed;

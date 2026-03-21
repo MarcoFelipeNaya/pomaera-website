@@ -232,4 +232,27 @@
         font-size: 1.3rem;
     }
 }
+@media (max-width: 768px) {
+    /* Hero */
+    .gods-hero {
+        height: auto;
+        min-height: 300px;
+        background-attachment: scroll; 
+        padding: 3rem 1rem;
+    }
 
+    .gods-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .gods-hero-content p {
+        font-size: 1rem;
+    }
+
+    /* gods cards */
+    .gods-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}

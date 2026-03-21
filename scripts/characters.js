@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Krissa",
             race: "Tiefling",
             class: "Hexblader",
-            excerpt: "Coberta de segredos e tramas obscuras, tentando traze luz para os perdidos.",
+            excerpt: "Coberta de segredos e tramas obscuras, tentando trazer luz para os perdidos.",
             backstory: "Adicione aqui a história completa deste personagem.",
             image: "/images/personagens/Krissa.webp",
             player: "Bruno",

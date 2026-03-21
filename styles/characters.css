@@ -1,18 +1,6 @@
-/*
-  characters.css — Characters page specific styles
-  All CSS variables come from general.css.
-  This file only adds what's unique to the characters page.
-*/
 
-/* =============================================
-   HERO
-   EXPLANATION: Darker, more dramatic overlay than the lore hero
-   because this page is about people — warriors, mages, rogues.
-   The image choice (dark atmospheric scene) fits that tone.
-   The bottom border in accent-gold ties it to the navbar.
-============================================= */
 .characters-hero {
-    min-height: 340px;
+    min-height: 380px;
     background:
         linear-gradient(rgba(10, 15, 30, 0.8), rgba(10, 15, 30, 0.97)),
         url('https://images.unsplash.com/photo-1551269901-5c5e14c25df7?q=80&w=1469&auto=format&fit=crop')
@@ -26,11 +14,6 @@
     position: relative;
 }
 
-/*
-  EXPLANATION: A subtle diagonal line pattern overlaid on the hero
-  gives it a "cracked stone / battle-worn" texture that suits
-  a page about warriors and adventurers.
-*/
 .characters-hero::before {
     content: '';
     position: absolute;
@@ -81,10 +64,8 @@
 
 /* =============================================
    SECTION HEADER
-   EXPLANATION: Each section (PCs and NPCs) has a small pill label
+    Each section (PCs and NPCs) has a small pill label
    above the title — purple for PCs (players/heroes), gold for NPCs
-   (important world figures). This colour coding is consistent with
-   the rest of the site where purple = interactive/player and gold = world/lore.
 ============================================= */
 .characters-section-header {
     text-align: center;
@@ -104,21 +85,12 @@
     margin-bottom: 1rem;
 }
 
-/*
-  EXPLANATION: Purple for PC label — connects to the accent-purple
-  used for interactive elements (buttons, active states) throughout the site.
-  These are the players: they take action, they interact.
-*/
 .pc-label {
     background: rgba(139, 92, 246, 0.15);
     color: var(--accent-purple);
     border: 1px solid rgba(139, 92, 246, 0.4);
 }
 
-/*
-  EXPLANATION: Gold for NPC label — connects to accent-gold used
-  for titles and world-level content. NPCs are part of the world's fabric.
-*/
 .npc-label {
     background: rgba(251, 191, 36, 0.12);
     color: var(--accent-gold);
@@ -134,25 +106,12 @@
     margin-right: auto;
 }
 
-/* =============================================
-   CHARACTER CARD GRID
-   EXPLANATION: 250px minimum keeps portrait images looking good
-   without being too wide. auto-fill means it naturally goes from
-   4 columns on desktop down to 2 on tablet and 1 on mobile.
-============================================= */
 .characters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-/* =============================================
-   CHARACTER CARD
-   EXPLANATION: Portrait-first layout — the image takes up the
-   top half of the card, the info below. This is the classic
-   "character card" format players recognise from tabletop games.
-   The card border colour is set per character type (PC/NPC) by JS.
-============================================= */
 .character-card {
     background: linear-gradient(160deg, #1e2d45 0%, #0f172a 100%);
     border-radius: var(--border-radius);
@@ -195,13 +154,6 @@
     }
 }
 
-/* =============================================
-   PORTRAIT
-   EXPLANATION: Fixed height portrait area with background-size: cover
-   so any image (square, landscape, portrait) fills it cleanly.
-   The gradient at the bottom fades into the card body — this technique
-   avoids a harsh cut between image and text.
-============================================= */
 .character-portrait {
     height: 280px;
     background-size: cover;
@@ -210,11 +162,6 @@
     z-index: 1;
 }
 
-/*
-  EXPLANATION: Gradient overlay at bottom of portrait blends into
-  the card background colour. Makes the transition feel seamless
-  regardless of what colour the portrait image is.
-*/
 .character-portrait::after {
     content: '';
     position: absolute;
@@ -225,10 +172,7 @@
     background: linear-gradient(transparent, #0f172a);
 }
 
-/*
-  EXPLANATION: PC/NPC badge sits in the top-right corner of the portrait
-  so users can tell character types at a glance without reading the card.
-*/
+
 .character-type-badge {
     position: absolute;
     top: 0.8rem;
@@ -261,9 +205,7 @@
     border: 1px solid rgba(251, 191, 36, 0.6);
 }
 
-/* =============================================
-   CARD BODY
-============================================= */
+
 .character-card-body {
     padding: 1.2rem 1.4rem 1.4rem;
 }
@@ -281,10 +223,7 @@
     text-align: center;
 }
 
-/*
-  EXPLANATION: Race & class in muted purple — secondary info that
-  contextualises the character without competing with the name.
-*/
+
 .character-race-class {
     font-size: 0.85rem;
     color: var(--accent-purple);
@@ -315,10 +254,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-/*
-  EXPLANATION: Player name shown only on PC cards (via JS).
-  Italic style distinguishes it as out-of-world (real person) info.
-*/
+
 .character-player {
     font-size: 0.8rem;
     color: var(--accent-gold);
@@ -362,10 +298,6 @@
 
 /* =============================================
    MODAL CONTENT
-   EXPLANATION: Two-column layout on desktop — portrait left,
-   info right. This gives the portrait room to breathe while
-   keeping all the character details visible without scrolling.
-   On mobile it collapses to a single column.
 ============================================= */
 .character-modal-content {
     background: linear-gradient(160deg, #1e2d45 0%, #111827 100%);
@@ -500,11 +432,7 @@
     line-height: 1.8;
 }
 
-/*
-  EXPLANATION: Player name gets a highlighted box to distinguish
-  it clearly as out-of-world info. The subtle border and bg
-  colour make it stand out without being visually noisy.
-*/
+
 .modal-player-box {
     background: rgba(139, 92, 246, 0.1);
     border: 1px solid rgba(139, 92, 246, 0.3);

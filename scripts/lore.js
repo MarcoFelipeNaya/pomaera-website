@@ -109,7 +109,9 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Lenda Teste",
             category:"lenda",
             excerpt:"Esta é uma lenda teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'lendas' para mostrar como as lendas serão categorizadas e filtradas.",
-            fullText:"Esta é uma lenda teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'lendas' para mostrar como as lendas serão categorizadas e filtradas.",
+            fullText: [
+                "Esta é uma lenda teste para mostrar como as campanhas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'lendas' para mostrar como as lendas serão categorizadas e filtradas."
+            ],
             author: "Marco",
             readTime: 1
         },
@@ -118,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Crônica Teste",
             category:"cronica",
             excerpt:"Esta é uma crônica teste para mostrar como as crônicas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'crônicas' para mostrar como as crônicas serão categorizadas e filtradas.",
-            fullText:"Esta é uma crônica teste para mostrar como as crônicas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'crônicas' para mostrar como as crônicas serão categorizadas e filtradas.",
+            fullText: [
+                "Esta é uma crônica teste para mostrar como as crônicas aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'crônicas' para mostrar como as crônicas serão categorizadas e filtradas."
+            ],
             author: "Marco",
             readTime: 1
         },
@@ -127,13 +131,15 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Mundo Teste",
             category:"mundo",
             excerpt:"Esta é um mundo teste para mostrar como os mundos aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'mundo' para mostrar como as crônicas serão categorizadas e filtradas.",
-            fullText:"Esta é uma mundo teste para mostrar como as mundo aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'mundo' para mostrar como as crônicas serão categorizadas e filtradas.",
+            fullText: [
+                "Esta é uma mundo teste para mostrar como as mundo aparecerão na página de lore. Ela tem um título, um trecho e um texto completo, assim como as outras histórias. A diferença é que ela tem a categoria 'mundo' para mostrar como as crônicas serão categorizadas e filtradas."
+            ],
             author: "Marco",
             readTime: 1
         },
         {
             id: 9,
-            title: "O Fim, o Recomeço eo Esquecimento",
+            title: "O Fim, o Recomeço e o Esquecimento",
             category:"lenda",
             excerpt:"Essas palavras são sinônimos dos antigos deuses Artesãos Sami, Ori e Erti.",
             fullText:[

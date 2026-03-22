@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Albert",
             race: "Firbolg",
             class: "Guarda",
-            excerpt: "Fugiu da sua triba e dos seus deveres.",
+            excerpt: "Fugiu da sua tribo e dos seus deveres.",
             backstory: ".",
             image: "/images/personagens/Placeholder.webp",
             player: "Marco",

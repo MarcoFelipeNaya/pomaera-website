@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 10,
             title: "Moedas",
-            category: "historia",
+            category: "mundo",
             excerpt: "Em Pomaera as moedas principais podem ser dividas em três",
             fullText: [
                  "Em Pomaera as moedas principais podem ser divididas em três: as moedas de ouro são conhecidas como Trincos e são amplamente utilizadas por todos em Pomaera, a cunhagem atual do Trinco tem o símbolo da Árvore da Vida, a flor de bordô de Myr e a Coruja dos Pétrio. E possuem o formato triangular com um furo no meio, facilitanto o carregamento e a contagem.",
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 11,
             title: "Idiomas",
-            category:"historia",
+            category:"mundo",
             excerpt: "Aqui colocamos uma lista dos principais idiomas falados em Pomaera.",
             fullText: [
                     "Aqui colocamos uma lista dos principais idiomas falados em Pomaera. Não exitem línguas especificas de cada raça, mas fique em paz! Certamente, com as descrições abaixo, você encontrará as línguas que te apeteçam e te façam ter mais vontade de ser poliglota!",

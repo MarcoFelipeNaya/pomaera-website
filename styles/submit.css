@@ -1,0 +1,360 @@
+/* submit.css — Submission page styles */
+
+/* =============================================
+   HERO
+============================================= */
+.submit-hero {
+    min-height: 320px;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.96)),
+        url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1473&auto=format&fit=crop')
+        center/cover no-repeat scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--accent-gold);
+    position: relative;
+}
+
+.submit-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(251, 191, 36, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+.submit-hero-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.submit-hero-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.submit-hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+}
+
+.submit-hero-content p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+}
+
+/* =============================================
+   MAIN CONTAINER
+============================================= */
+.submit-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* =============================================
+   HOW IT WORKS — steps row
+============================================= */
+.submit-how {
+    text-align: center;
+}
+
+.submit-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.submit-step {
+    background: linear-gradient(160deg, #1e2d45 0%, #0f172a 100%);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+    border-top: 3px solid var(--accent-gold);
+    border-radius: var(--border-radius);
+    padding: 1.8rem 1.4rem;
+    text-align: center;
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4),
+                0 0 15px rgba(251, 191, 36, 0.08);
+}
+
+.step-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(251, 191, 36, 0.1);
+    border: 2px solid rgba(251, 191, 36, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.3rem;
+    color: var(--accent-gold);
+}
+
+.submit-step h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+}
+
+.submit-step p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.submit-step-arrow {
+    color: rgba(251, 191, 36, 0.3);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* =============================================
+   SUBMISSION CARDS GRID
+============================================= */
+.submit-cards-section {
+    text-align: center;
+}
+
+.submit-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* =============================================
+   INDIVIDUAL SUBMISSION CARD
+============================================= */
+.submit-card {
+    background: linear-gradient(160deg, #1e2d45 0%, #0f172a 100%);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-top: 3px solid var(--card-color, var(--accent-gold));
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 120px;
+    background: radial-gradient(ellipse at top, color-mix(in srgb, var(--card-color, #fbbf24) 8%, transparent) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.submit-card:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.5),
+        0 0 18px color-mix(in srgb, var(--card-color, #fbbf24) 12%, transparent);
+    border-color: var(--card-color, var(--accent-gold));
+}
+
+.submit-card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--card-color, #fbbf24) 12%, transparent);
+    border: 2px solid color-mix(in srgb, var(--card-color, #fbbf24) 40%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: var(--card-color, var(--accent-gold));
+}
+
+.submit-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--accent-gold);
+    text-align: center;
+    text-shadow: 0 0 14px rgba(251, 191, 36, 0.3);
+}
+
+.submit-card > p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Checklist of fields */
+.submit-card-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin: auto 0;
+}
+
+.submit-card-fields span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-card-fields i {
+    color: var(--card-color, var(--accent-gold));
+    font-size: 0.7rem;
+    flex-shrink: 0;
+}
+
+/* Submit button */
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 25px;
+    border: 2px solid var(--card-color, var(--accent-gold));
+    color: var(--card-color, var(--accent-gold));
+    background: transparent;
+    font-size: 0.88rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    letter-spacing: 0.03em;
+}
+
+.submit-btn:hover {
+    background: var(--card-color, var(--accent-gold));
+    color: var(--primary-dark);
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--card-color, #fbbf24) 30%, transparent);
+}
+
+/* =============================================
+   GUIDELINES
+============================================= */
+.submit-guidelines {
+    text-align: center;
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+.guideline-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.8rem;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.guideline-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.guideline-do    { border-top: 3px solid #2ecc71; }
+.guideline-dont  { border-top: 3px solid #e74c3c; }
+.guideline-info  { border-top: 3px solid #0092d6; }
+
+.guideline-do h3    { color: #2ecc71; }
+.guideline-dont h3  { color: #e74c3c; }
+.guideline-info h3  { color: #0092d6; }
+
+.guideline-card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.guideline-card li {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.guideline-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+    .submit-hero-content h1 { font-size: 2.2rem; }
+
+    .submit-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submit-step {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .submit-step-arrow {
+        transform: rotate(90deg);
+    }
+
+    .submit-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-hero-content h1 { font-size: 1.8rem; }
+    .submit-container { padding: 2rem 1rem; gap: 3rem; }
+}

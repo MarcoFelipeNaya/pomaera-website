@@ -330,6 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'location-card';
         card.style.animationDelay = `${delayIndex * 0.1}s`;
         
+
         // Type icon
         const typeIcons = {
             city: 'fa-city',
@@ -350,6 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
             piéco: '#d2d600ff',
             tariniel: '#0092d6ff'
         };
+        
+        card.style.setProperty('--region-color', regionColors[location.region] || '#fbbf24');
         
         card.innerHTML = `
             <div class="location-image" style="background-image: url('${location.image}')">

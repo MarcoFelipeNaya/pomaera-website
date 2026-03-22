@@ -285,9 +285,11 @@
 }
 
 .location-card:hover {
-    border-color: var(--accent-purple);
+    border-color: var(--region-color);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 0 16px color-mix(in srgb, var(--region-color) 20%, transparent); /* subtle glow */
 }
 
 .location-image {

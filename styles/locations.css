@@ -361,7 +361,6 @@
 
 .location-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
     padding-top: 1rem;
@@ -391,7 +390,9 @@
     cursor: pointer;
     font-size: 0.9rem;
     transition: background 0.3s;
+    margin-left: auto;
 }
+
 
 .view-details:hover {
     background: var(--accent-purple);

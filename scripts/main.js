@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+
 //mobile menu
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
@@ -8,6 +11,24 @@ if (menuToggle) {
         menuToggle.innerHTML = navLinks.classList.contains('active') 
             ? '<i class="fas fa-times"></i>' 
             : '<i class="fas fa-bars"></i>';
+    });
+}
+// Back to top button
+const backToTop = document.getElementById('backToTop');
+
+if (backToTop) {
+    // Show button after scrolling down 400px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top on click
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
 
@@ -76,18 +97,4 @@ document.querySelectorAll('.card, .character-card').forEach(el => {
     observer.observe(el);
 });
 
-// Add a simple fade-in animation class to CSS
-const style = document.createElement('style');
-style.textContent = `
-    .card, .character-card {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    
-    .fade-in {
-        opacity: 1;
-        transform: translateY(0);
-    }
-`;
-document.head.appendChild(style);
+});

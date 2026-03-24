@@ -1,4 +1,3 @@
-// locations.js - Interactive features for locations page
 
 document.addEventListener('DOMContentLoaded', function() {
     // Location data - Replace with your actual locations
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             region: "coralia",
             type: "wilderness",
             description: "Um lago que há eras se tornou roxo devido as fortes energias mágicas que emanam dele.",
-            image: "",
+            image: "/images/maps/LagoRoxoSM.webp",
             population: "0",
             ruler: "Família Pétrio",
             danger: "Alto",
@@ -56,87 +55,104 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 4,
-            name: "Port Haven",
-            region: "east",
+            name: "Istral",
+            region: "piéco",
             type: "city",
-            description: "A bustling port city known for its exotic goods and pirate legends.",
-            image: "https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "120,000",
-            ruler: "Lord Admiral Grey",
-            danger: "Low",
-            tags: ["Port", "Trade", "Pirates"],
+            description: "A cidade das ravinas.",
+            image: "/images/maps/IstralSM.webp",
+            population: "35,000",
+            ruler: "Conselho dos Mais Ricos da Cidade",
+            danger: "Alto",
+            tags: [""],
             details: {
-                history: "Founded as a trading outpost 300 years ago.",
-                notable: "Grand Harbor, Pirate's Market, Lighthouse",
-                factions: ["Harbor Master's Guild", "Pirate Lords"]
+                history: "Antes de se tornar Istral eram apenas pequenas vilas que se arriscavam em minerar no meio das ravinas por principalmente Minério da Maré, ao longo dos anos devido as riquezas que foram encontradas por lá, pouco a pouco as vilas cresceram e se tornaram uma grande cidade chamada Istral, apesar dos riscos envolvidos em viver por lá a população não para de crescer.",
+                notable: "A Ponte Mágica, Distrito do Dragão, Loja de Maravilhas Mágicas",
+                factions: ["Mineiradora Giberto e Filhos", "Mineiradora Gaston"]
             }
         },
         {
             id: 5,
-            name: "Stonebridge Town",
-            region: "north",
+            name: "Imre",
+            region: "myr",
             type: "town",
-            description: "A frontier town built around a massive ancient stone bridge.",
-            image: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            description: "Uma pequena cidade ao norte da grande nação de Myr.",
+            image: "/images/maps/ImreSM.webp",
             population: "5,000",
-            ruler: "Mayor Bronzebeard",
-            danger: "Medium",
-            tags: ["Frontier", "Bridge", "Mining"],
+            ruler: "Myr",
+            danger: "Baixo",
+            tags: [""],
             details: {
-                history: "Founded 100 years ago when the bridge was discovered.",
-                notable: "Great Stone Bridge, Miner's Guildhall",
-                factions: ["Miner's Guild", "Bridge Wardens"]
+                history: "Uma pequena cidade ao norte que anos atrás foi alvo de uma droga extremamente viciante que quase destuiu a cidade, após muitos anos a vida voltou ao normal.",
+                notable: "O Grande Monólito",
+                factions: ["Os Escribas"]
             }
         },
         {
             id: 6,
-            name: "Sunken Ruins",
-            region: "east",
-            type: "ruin",
-            description: "Ancient city ruins half-submerged in a coastal lagoon.",
-            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "None",
-            ruler: "None",
-            danger: "High",
-            tags: ["Ruins", "Sunken", "Ancient"],
+            name: "Hoste",
+            region: "tariniel",
+            type: "town",
+            description: "Pequena cidade em volta de neve.",
+            image: "/images/maps/HosteSM.webp",
+            population: "200",
+            ruler: "Nenhum",
+            danger: "Baixo",
+            tags: [""],
             details: {
-                history: "Believed to be from the First Empire, sank 1000 years ago.",
-                notable: "Sunken temples, Coral gardens, Ancient artifacts",
-                factions: ["Archaeologists", "Sea Cultists"]
+                history: "Uma vila que é sempre assolada pelo inverno, há alguns anos sobreviviu um ataque de espirítos da neve vindo de um lago próximo, curiosamente nenhum dos moradores da paca vila quis contar como, apenas que bravos heróis passaram por lá.",
+                notable: "Absolutamente nada",
+                factions: ["Nenhuma"]
             }
         },
         {
             id: 7,
-            name: "Ironpeak Fortress",
-            region: "north",
+            name: "Teracia",
+            region: "âmago",
             type: "dungeon",
-            description: "A dwarven fortress carved into a mountain peak, now overrun by goblins.",
-            image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "Goblins",
-            ruler: "Goblin King",
-            danger: "Medium",
-            tags: ["Fortress", "Dwarven", "Mountain"],
+            description: "Uma pequena colônia de Catfolks.",
+            image: "/images/maps/TeraciaSM.webp",
+            population: "80",
+            ruler: "Rei Adalberto e Rei Guilhermo",
+            danger: "Médio",
+            tags: [""],
             details: {
-                history: "Abandoned by dwarves 200 years ago during the Goblin Wars.",
-                notable: "Forgotten forges, Gem mines, Ancient armory",
-                factions: ["Goblin tribes", "Dwarf reclamation forces"]
+                history: "Essa colônia de Catfolks é conhecida na região por produzirem itens mágicos de altissíma qualidade, apesar de ser pequena é liderada por dois adoráveis reis, na ocasião em que visitei-os me contaram sobre como um Mimíco havia invadido a caverna que eles transformaram em lar, mas que graças a bravura de cada catfolk que vivia sob o teto eles o espantaram.",
+                notable: "Itens mágicos de qualidade",
+                factions: ["A Guarda Real"]
             }
         },
         {
             id: 8,
-            name: "Mistwood Village",
-            region: "west",
-            type: "town",
-            description: "A small village shrouded in perpetual mist, known for herbalists.",
-            image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            population: "800",
-            ruler: "Elder Willow",
-            danger: "Low",
-            tags: ["Village", "Mist", "Herbalists"],
+            name: "Pico do Carneiro",
+            region: "myr",
+            type: "wilderness",
+            description: "Um pico nevado próximo de Myr.",
+            image: "/images/maps/PicodoCarneiroSM.webp",
+            population: "0",
+            ruler: "Nenhum",
+            danger: "Baixo",
+            tags: [""],
             details: {
-                history: "Settled by herbalists seeking rare plants.",
-                notable: "Herb gardens, Mist spring, Ancient druid circle",
-                factions: ["Herbalist Guild", "Druid Circle"]
+                history: "Pico nevado conhecido pelos diversos carneiros.",
+                notable: "Carneiros",
+                factions: ["Carneiros"]
+            }
+        },
+        {
+            id: 9,
+            name: "Averno",
+            region: "coralia",
+            type: "city",
+            description: "Um cidade reconstruída após ter sido destruída por um culto sombrio.",
+            image: "/images/maps/AvernoSM.webp",
+            population: "5000",
+            ruler: "Família Pétrio",
+            danger: "Médio",
+            tags: [""],
+            details: {
+                history: "Em 2270, 80% da população foi morta por um culto de bruxas, felizmente um grupo de aventureiros conseguiu para o culto, desde então a cidade se tornou uma fortaleza.",
+                notable: "Lago Roxo, Igreja de Mot",
+                factions: ["Guarda Real de Pétrio","Guilda de Extração" ]
             }
         }
     ];
@@ -162,22 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
     renderLocations(locations);
 
     // Event Listeners
-    // Filter by type
-    filterTags.forEach(tag => {
-        tag.addEventListener('click', function() {
-            // Update active state
-            filterTags.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-            
-            currentFilter = this.dataset.filter;
-            currentRegion = null; // Clear region filter
-            
-            // Reset region cards
-            regionCards.forEach(card => card.style.opacity = '1');
-            
-            filterLocations();
-        });
-    });
 
     // Filter by region
     regionCards.forEach(card => {
@@ -193,14 +193,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 regionCards.forEach(c => c.style.opacity = '0.5');
                 this.style.opacity = '1';
                 
-                // Update filter buttons
-                filterTags.forEach(tag => {
-                    if (tag.dataset.filter === 'all') {
-                        tag.classList.add('active');
-                    } else {
-                        tag.classList.remove('active');
-                    }
-                });
             }
             
             filterLocations();
@@ -225,7 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const filtered = locations.filter(location => 
             location.name.toLowerCase().includes(searchTerm) ||
             location.description.toLowerCase().includes(searchTerm) ||
-            location.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
             location.region.includes(searchTerm)
         );
 
@@ -383,9 +374,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="location-footer">
-                    <div class="location-tags">
-                        ${location.tags.map(tag => `<span class="location-tag">${tag}</span>`).join('')}
-                    </div>
                     <button class="view-details" data-id="${location.id}">
                         <i class="fas fa-eye"></i> Detalhes
                     </button>
@@ -464,13 +452,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <div>
                                         <strong>Perigo</strong>
                                         <p>${location.danger}</p>
-                                    </div>
-                                </div>
-                                <div class="fact">
-                                    <i class="fas fa-tags"></i>
-                                    <div>
-                                        <strong>Tags</strong>
-                                        <p>${location.tags.join(', ')}</p>
                                     </div>
                                 </div>
                             </div>

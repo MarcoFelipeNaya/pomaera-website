@@ -40,15 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Once you have the right coords, set debugMode = false again.
     // =============================================
     const markers = [
-        {
-            coords: [523, 814],
-            name: "Inata",
-            region: "âmago",
-            type: "cidade",
-            desc: "A principal cidade do Âmago e sede do Conselho das Cinco Cidades.",
-            link: true
-        },
-        // ---- ADD YOUR MARKERS BELOW THIS LINE ----
+                // ---- ADD YOUR MARKERS BELOW THIS LINE ----
         // Copy and paste this template for each new location:
         //
         // {
@@ -59,6 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
         //     desc: "Descrição curta.",
         //     link: true            // set false if no locations page entry yet
         // },
+        {
+            coords: [523, 814],
+            name: "Inata",
+            region: "âmago",
+            type: "cidade",
+            desc: "A principal cidade do Âmago e sede do Conselho das Cinco Cidades.",
+            link: true
+        },
         {
             coords: [1004, 1047],       // pixel position [top, left]
             name: "Lago Roxo",
@@ -75,6 +75,54 @@ document.addEventListener('DOMContentLoaded', function () {
             type: "cidade",         // city | town | dungeon | wilderness | ruin
             desc: "Uma cidade costeira com lendas e histórias sobre dragões, mas todos sabem que o verdadeiro perigo está no mar.",
             link: true            // set false if no locations page entry yet
+        },
+        {
+            coords: [580, 1115],
+            name: "Istral",
+            region: "piéco",
+            type: "cidade",
+            desc: "A cidade das Ravinas.",
+            link: true
+        },
+        {
+            coords: [424, 362],
+            name: "Imre",
+            region: "myr",
+            type: "vila",
+            desc: "Imre vive!.",
+            link: true
+        }, 
+        {
+            coords: [810, 259],
+            name: "Hoste",
+            region: "tariniel",
+            type: "vila",
+            desc: "Pequena vila.",
+            link: true
+        },
+        {
+            coords: [600, 885],
+            name: "Teracia",
+            region: "âmago",
+            type: "masmorra",
+            desc: "Colônia de Catfolks.",
+            link: true
+        },
+        {
+            coords: [187, 392],
+            name: "Pico do Carneiro",
+            region: "myr",
+            type: "natureza",
+            desc: "Pico de carneiros.",
+            link: true
+        },
+        {
+            coords: [989, 1029],
+            name: "Averno",
+            region: "coralia",
+            type: "cidade",
+            desc: "O Berço do Lago Roxo.",
+            link: true
         },
     ];
 

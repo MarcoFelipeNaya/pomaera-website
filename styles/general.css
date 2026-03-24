@@ -256,6 +256,18 @@ a.card {
     font-style: italic;
     color: var(--accent-gold) !important;
 }
+
+.card, .character-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -297,6 +309,40 @@ a.card {
     }
 
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent-purple);
+    border: 2px solid rgba(139, 92, 246, 0.4);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+    pointer-events: none; /* not clickable when invisible */
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.back-to-top:hover {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+}
+
 
 .footer-socials {
     margin-top: 1rem;

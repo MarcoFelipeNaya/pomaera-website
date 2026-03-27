@@ -1,0 +1,300 @@
+
+/* =============================================
+   MAP WRAPPER
+============================================= */
+.map-wrapper {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    margin-top: 2rem;
+}
+
+/* =============================================
+   LEAFLET MAP CONTAINER
+   EXPLANATION: Leaflet REQUIRES an explicit height on its container.
+   500px is a good default — tall enough to see the whole map,
+   not so tall it pushes everything else off screen.
+   On mobile we reduce this to 350px.
+============================================= */
+#pomaera-map {
+    height: 600px;
+    width: 100%;
+    background: #0f172a; /* fallback while image loads */
+}
+
+/* =============================================
+   CONTROL HINT BAR
+============================================= */
+.map-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    pointer-events: none; /* doesn't block map interactions */
+}
+
+/* =============================================
+   DEBUG COORDS DISPLAY
+   EXPLANATION: Only visible when debugMode = true in map.js.
+   Shows current cursor coordinates so you can place markers accurately.
+============================================= */
+#map-debug-coords {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-family: monospace;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    z-index: 1001;
+    pointer-events: none;
+    display: none; /* shown by JS only in debug mode */
+}
+
+/* Show only when it has content (debug mode active) */
+#map-debug-coords:not(:empty) {
+    display: block;
+}
+
+/* =============================================
+   MAP LEGEND
+============================================= */
+.map-legend {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.map-legend h4 {
+    color: var(--accent-gold);
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-regions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.5rem;
+}
+
+.legend-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* =============================================
+   CUSTOM MARKER ICON
+   EXPLANATION: The marker is a circle with an icon inside,
+   coloured by region using CSS custom property --marker-color.
+   The pulse ring behind it is a subtle animated glow that
+   draws attention to markers without being distracting.
+============================================= */
+.pomaera-marker {
+    position: relative;
+}
+
+.marker-pin {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.92);
+    border: 2.5px solid var(--marker-color, #fbbf24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--marker-color, #fbbf24);
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.marker-pin:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 16px var(--marker-color, #fbbf24);
+}
+
+/*
+  EXPLANATION: The pulse animation is a ring that expands
+  outward from the marker and fades out. It subtly signals
+  "this is interactive" without being distracting.
+*/
+.marker-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--marker-color, #fbbf24);
+    animation: markerPulse 2.5s ease-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes markerPulse {
+    0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+
+/* =============================================
+   POPUP STYLES
+============================================= */
+.pomaera-leaflet-popup .leaflet-popup-content-wrapper {
+    background: #1a2540;
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    overflow: hidden;
+}
+
+.pomaera-leaflet-popup .leaflet-popup-tip {
+    background: #1a2540;
+}
+
+.pomaera-leaflet-popup .leaflet-popup-content {
+    margin: 0;
+    width: auto !important;
+}
+
+/* Close button */
+.pomaera-leaflet-popup .leaflet-popup-close-button {
+    color: var(--text-muted) !important;
+    font-size: 1.1rem !important;
+    top: 0.4rem !important;
+    right: 0.5rem !important;
+    z-index: 10;
+}
+
+.pomaera-leaflet-popup .leaflet-popup-close-button:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* Popup inner content */
+.pomaera-popup {
+    padding: 1rem 1.2rem 1rem;
+    min-width: 200px;
+}
+
+.popup-header {
+    padding-left: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.popup-type {
+    font-size: 0.72rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.popup-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    margin: 0 0 0.2rem;
+    line-height: 1.2;
+}
+
+.popup-region {
+    font-size: 0.78rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.popup-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0 0 0.8rem;
+}
+
+.popup-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+    text-decoration: none;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.popup-link:hover {
+    background: var(--accent-purple);
+    color: white;
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+    #pomaera-map {
+        height: 350px;
+    }
+
+    .legend-regions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #pomaera-map {
+        height: 280px;
+    }
+
+    .legend-regions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legend-types {
+        gap: 0.6rem;
+    }
+}

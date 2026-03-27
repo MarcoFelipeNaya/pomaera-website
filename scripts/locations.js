@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Uma pequena cidade ao norte da grande nação de Myr.",
             image: "/images/maps/ImreSM.webp",
             population: "5,000",
-            ruler: "Myr",
+            ruler: "Coroa de Myr",
             danger: "Baixo",
             tags: [""],
             details: {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: "wilderness",
             description: "Um pico nevado próximo de Myr.",
             image: "/images/maps/PicodoCarneiroSM.webp",
-            population: "0",
+            population: "Dezenas de Carneiros",
             ruler: "Nenhum",
             danger: "Baixo",
             tags: [""],
@@ -153,6 +153,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 history: "Em 2270, 80% da população foi morta por um culto de bruxas, felizmente um grupo de aventureiros conseguiu para o culto, desde então a cidade se tornou uma fortaleza.",
                 notable: "Lago Roxo, Igreja de Mot",
                 factions: ["Guarda Real de Pétrio","Guilda de Extração" ]
+            }
+        },
+        {
+            id: 10,
+            name: "Bosque do Sumidouro",
+            region: "myr",
+            type: "wilderness",
+            description: "Um conjunto de pântanos e matas localizada a poucos quilômetros de Dianriel.",
+            image: "",
+            population: "0",
+            ruler: "Nenhum",
+            danger: "Médio",
+            tags: [""],
+            details: {
+                history: "Destacada por ter uma vegetação de coloração verde escura em contraste ao vermelho do restante do país. Diversas lendas locais afirmam que nele há uma gruta guardada por um fauno e um lago mágico que encolhe quem se banha em suas águas.",
+                notable: "Vegetação Verde, Lago Encolhedor, Gruta do Fauno",
+                factions: ["Nenhuma" ]
+            }
+        },
+        {
+            id: 11,
+            name: "Dianriel",
+            region: "myr",
+            type: "town",
+            description: "Uma vila encantadora e vivaz no coração de Myr.",
+            image: "/images/maps/DianrielSM.webp",
+            population: "6200",
+            ruler: "Coroa de Myr",
+            danger: "Baixo",
+            tags: [""],
+            details: {
+                history: "Dianriel é um dos principais pontos de parada para viajantes de Myr, pela sua localização central e clima hospitaleiro. Em 2297 houve um descarrilamento de um trem próximo à cidade, ação direta do grupo antimonarca Cetro Quebrado.",
+                notable: "Telhas Pretas, Ruínas do Moinho, Pedreira",
+                factions: ["Cetro Quebrado" ]
             }
         }
     ];

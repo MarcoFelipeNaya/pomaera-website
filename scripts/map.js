@@ -124,6 +124,22 @@ document.addEventListener('DOMContentLoaded', function () {
             desc: "O Berço do Lago Roxo.",
             link: true
         },
+        {
+            coords: [240, 364],
+            name: "Bosque do Sumidouro",
+            region: "myr",
+            type: "natureza",
+            desc: "Um conjunto de pântanos e matas localizada a poucos quilômetros de Dianriel.",
+            link: true
+        },
+        {
+            coords: [242, 387],
+            name: "Dianriel",
+            region: "myr",
+            type: "vila",
+            desc: "Uma vila encantadora e vivaz no coração de Myr.",
+            link: true
+        },
     ];
 
     // =============================================

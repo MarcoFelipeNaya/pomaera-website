@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function () {
             excerpt: "Jovem musicista que sempre circula pela alta sociedade.",
             backstory: "Fugindo de Myr após os eventos da Terra Vermelha, Phillip se estabeleceu no Âmago onde viveu até a explosão de Inata.",
             image: "/images/personagens/Phillip.webp",
-            faction: "Sem facção",
+            faction: "Engenheiros da Tormenta",
             status: "Desaparecido"
         },
         {
@@ -574,6 +574,17 @@ document.addEventListener('DOMContentLoaded', function () {
             backstory: "Vaas tomou conhecimento dos Caraputangas enquanto eles viajavam até Piéco, viu nesse grupo uma oportunidade para pôr em prática seu plano mais maligno.",
             image: "/images/personagens/vaas.webp",
             faction: "Conselho das Cinco Cidades",
+            status: "Ativo"
+        },
+        {
+            id: 103,
+            name: "Elois Naemaris",
+            race: "Elfa",
+            class: "Historiadora",
+            excerpt: "Um antigo conselheiro de Inata dentro do Conselho das Cinco Cidades e verdadeiro responsável pela explosão de Inata.",
+            backstory: "Formada com louvor nas melhor universidade de Quendi, esta humilde historiadora tem como meta de vida capturar toda essência de Pomaera e suas histórias.",
+            image: "",
+            faction: "Editora Naemaris e filha",
             status: "Ativo"
         }
     ];

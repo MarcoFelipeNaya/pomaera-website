@@ -117,6 +117,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Após um tempo de viagem eles chegam no meio do mar de Aruna, com alguns itens em mãos eles pulam na água e fazem o caminho até as ruínas de um antigo templo, lutando contra seres marinhos no caminho, ao chegarem no templo e encontrar uma área que não foi inundada o grupo encontra mais resistência de monstros que tomaram conta das ruinas, durante esses embates o grupo percebe que Aelin carrega uma espada peculiar e parecida com a que a Zovaa pegou da bruxa morta, Aelin conta que a espada é uma herança e o grupo conta sobre Os Sete de Espadas",
                 "Com curiosidade Aelin decide acompanhar o grupo para saber mais sobre sua espada e sobre seu passado, mas antes eles precisavam ressucitar Sylim, apóps chegar na parte principal do templo eles descobrem que um grupo grande de Slaads tomaram conta do local e um combate se inicia com o grupo saindo vitórioso, mesmo que alguns deles tenham que ser curados das larvae de Slaads em seus corpos, o grupo recupera o material perdido e volta para Arunafeltz",
                 "Chegando ao templo do deus esquecido o grupo descobre que Zatssi fugiu com Alana sequestrada e com o colar que seria usado para ressucitar Sylim, sem perder tempo e com a ajuda de Aelin o grupo retorna para Pomaera, porém com a ajuda de moradores de Faéria eles conseguem passar por um portal em uma floresta mais próxima de Muro Pétrio",
+                "Ao chegarem na cidade eles descobrem em um bar que Zatssi e Alana passaram por lá, mas o garçom não tinha mais informações, o grupo se apega ao garçom e após mais umas perguntas eles descobrem que o mesmo também trabalha como garçom em eventos para a alta sociedade de Muro Pétrio. Com energias renovadas e mais informações da cidade eles decidem ir até o conhecido de Kalahan, o professor Sebastian.",
+                "Na casa do historiador ele conta mais sobre a história dos Sete de Espadas, eles foram muito respeitados e queridos por toda Corália, porém em algum momento a líder dos Sete de Espadas conhecida como Satanael, foi deposta do seu posto e de seus poderes pela ordem e apodreceu em alguma prisão, apesar de não saber ao certo onde, ele diz que algumas fontes citam uma prisão próximo ao Lago Roxo. Ele também conta mais sobre como nem todas as armas do Sete de Espadas eram espadas, existia pelo menos uma lança, um machado e alguns dizem até um arco. Ele fica surpreso ao ver que Aelin possui uma das espadas e ainda mais surpreso de saber que o grupo vendeu a outra espada que eles possuiam em Faéria",
+                "Depois de uma boa conversa, o grupo decidi ir embora, o professor agradece a visita e diz estar feliz com tantas pessoas tomando interesse pela história ultimamente. Isso faz com que o grupo pare por um instante e pergunte sobre quem mais veio perguntar a ele sobre isso, ele diz que não muito tempo atrás uma socialite da cidade chamada Abigail Hayarte o visitou com muita curiosidade sobre a Ordem.",
+                "O grupo pega mais alguns detalhes e se lembram que já conhecem alguém que costuma trabalhar com os ricos da cidade, voltando ao bar e ao garçom favorito deles ele diz que sim, que conhece a Abigail, ela costuma fazer grandes festas que mais vezes que não acabam em orgias organizadas e que curiosamente ela dará uma festa na próxima noite, sem pensar duas vezes eles decidem invadir a festa disfarçados de garçons. Com um dia para matar o grupo se divide em se preparar e em espiar Abigail, eles descobrem que um dos convidados da festa é o atual consul da cidade.",
+                "No próximo dia o grupo, com ajuda do garçom, são contrados para servir na festa, ao chegarem lá eles sentem uma energia estranha por toda a residência, o grupo consegue escapar das vistas e logo começam a investigar a mansão, em uma das salas eles encontram Abigail, falando com outras duas pessoas através de uma bola de cristal, na sala também tem um halfling velho que deixa Julho assustado. Na conversa o grupo consegue ouvir que 'o plano está indo bem' as pessoas na bola de cristal falam sobre sequestrar o trem em uma das paradas de serviço entre Averno e Muro Pétrio para poderem explodir o trem em Muro Pétrio e que em Averno está tudo certo para o sacrificio, do lado da Abigail ela informa que logo irá matar todos que estão na festa e se juntará a eles em Averno. A conversa termina e Abigail sai da sala, porém antes que o grupo consiga pará-la, o halfling descobre que eles estavam escondidos e isso começa uma luta."
             ],
             author: "Marco",
             readTime: 10
@@ -297,8 +302,18 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
             author: "Lucas Queiroz",
             readTime: 137
+        },
+        {
+            id: "13",
+            title: "Uma Nova Aventura",
+            category:"campanhas",
+            excerpt: "Os Caraputangas, um grupo formando por pessoas diferentes mas que compartilham o sentimento de estar fugindo de algo vivem aventuras por toda Pomaera.",
+            fullText: [
+                    "",
+            ],
+            author: "Marco",
+            readTime: 0
         }
-
     ];
 
     const categoryConfig = {

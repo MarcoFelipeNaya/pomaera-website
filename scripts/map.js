@@ -1242,7 +1242,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "cidade",
             desc: "...",
-            link: false
+            link: true
         },
         {
             coords: [272, 550],
@@ -1274,7 +1274,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "cidade",
             desc: "...",
-            link: true
+            link: false
         },
         {
             coords: [98, 432],
@@ -1282,7 +1282,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "vila",
             desc: "...",
-            link: true
+            link: false
         },
         {
             coords: [100, 518],
@@ -1290,7 +1290,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "porto",
             desc: "...",
-            link: true
+            link: false
         },
         {
             coords: [103, 589],
@@ -1298,7 +1298,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "vila",
             desc: "...",
-            link: true
+            link: false
         },
         {
             coords: [162, 555],
@@ -1306,7 +1306,7 @@ document.addEventListener('DOMContentLoaded', function () {
             region: "myr",
             type: "vila",
             desc: "...",
-            link: true
+            link: false
         }
 
 

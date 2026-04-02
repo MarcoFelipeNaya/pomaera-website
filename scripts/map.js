@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [381, 1248],       // pixel position [top, left]
             name: "Porto Draco",
-            region: "modega",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
+            region: "Costa da Tormenta",     // âmago | coralia | luna | modega | montes | myr | piéco | tariniel
             type: "porto",         // city | town | dungeon | wilderness | ruin
             desc: "Uma cidade costeira com lendas e histórias sobre dragões, mas todos sabem que o verdadeiro perigo está no mar.",
             link: true            // set false if no locations page entry yet
@@ -871,7 +871,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [808, 1471],
             name: "Mariel",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "cidade",
             desc: "Uma cidade grande em um dos foz do rio Elken.",
             link: false
@@ -879,7 +879,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [765, 1488],
             name: "Ressaca",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "vila",
             desc: "Pequena vila próxima a costa nordeste.",
             link: false
@@ -887,7 +887,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [747, 1541],
             name: "Porto das Lâminas",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Local da primeira revolta pirata da Costa da Tormenta, é um lugar perigoso porém necessário para quem deseja as armas mais poderosas.",
             link: false
@@ -895,7 +895,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [655, 1433],
             name: "Orae",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "cidade",
             desc: "Uma cidade ao lado do rio Elken, apesar de escondida e envolta no pantâno a cidade prospera como se fosse uma capital.",
             link: false
@@ -903,7 +903,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [601, 1544],
             name: "Porto Dinael",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Outro grande porto de Modega, um dos primeiros a serem construídos.",
             link: false
@@ -911,7 +911,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [544, 1411],
             name: "Raposa do Norte",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "vila",
             desc: "Confortavelmente localizada no meio do delta de Modega. Mas ao norte, claro.",
             link: false
@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [515, 1394],
             name: "Raposa do Sul",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "vila",
             desc: "Confortavelmente localizada no meio do delta de Modega.",
             link: false
@@ -927,7 +927,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [548, 1350],
             name: "Amaeae",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "vila",
             desc: "Uma vila escondida no interior de Modega.",
             link: false
@@ -935,7 +935,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [423, 1300],
             name: "Saria",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "cidade",
             desc: "Uma rica cidade muito buscada por aventureiros devido ao alto valor de pagamento para missões perigosas.",
             link: false
@@ -943,7 +943,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [395, 1375],
             name: "Âncora",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Um porto que fica em uma pequena península cujo o istmo costuma sumir por meses a fio.",
             link: false
@@ -951,7 +951,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [555, 1645],
             name: "Chifre",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Um dos portos da Ilha das Almas.",
             link: false
@@ -959,7 +959,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [358, 1661],
             name: "Porto Tubarão",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Um dos portos da Ilha das Almas.",
             link: false
@@ -967,7 +967,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [369, 1556],
             name: "Corrente",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "porto",
             desc: "Um dos portos da Ilha das Almas.",
             link: false
@@ -983,14 +983,14 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [699, 1275],
             name: "Rio Elken",
-            region: "água",
+            region: "modega",
             type: "agua",
             desc: "Um grande rio que corta Modega por inteira, é conhecido por ser extremamente perigoso para navegação.",
             link: false
         },
         {
             coords: [825, 1317],
-            name: "A Torren",
+            name: "A Torre",
             region: "modega",
             type: "ruína",
             desc: "Uma grande torre que surgiu há algumas decádas, ninguém sabe de onde veio, seu interior é tão vasto quanto uma cidade e grupos de aventureiros se arriscam para trazer tesouros de lá, portanto logo se formou uma comunidade em volta.",
@@ -999,7 +999,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             coords: [606, 1323],
             name: "Os Pantânos",
-            region: "modega",
+            region: "Costa da Tormenta",
             type: "natureza",
             desc: "Na parte de Modega que é conhecida como Costa da Tormenta possui grandes pantânos que cobrem a região.",
             link: false
@@ -1326,7 +1326,8 @@ document.addEventListener('DOMContentLoaded', function () {
         'piéco':    '#d2d600',
         'tariniel': '#2a86b1',
         'água':     '#04aaf7',
-        'rokai':    '#8f1500'
+        'rokai':    '#8f1500',
+        'Costa da Tormenta': '#01b487',
     };
 
     // =============================================

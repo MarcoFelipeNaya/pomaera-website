@@ -1205,7 +1205,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link: false
         },
         {
-            coords: [451, 431],
+            coords: [372, 414],
             name: "Manhã de Vesper",
             region: "myr",
             type: "vila",

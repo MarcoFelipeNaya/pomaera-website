@@ -369,22 +369,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Type icon
         const typeIcons = {
-            city: 'fa-city',
+            city:       'fa-city',
             wilderness: 'fa-tree',
-            dungeon: 'fa-dungeon',
-            town: 'fa-home',
-            ruin: 'fa-monument'
+        dungeon:        'fa-dungeon',
+            town:       'fa-home',
+            ruin:       'fa-monument',
+            port:       'fa-anchor'
         };
         
         // Region colors
         const regionColors = {
-            luna: '#6e2f8bff',
-            coralia: '#aec9ddff',
-            modega: '#ed8936',
-            myr: '#c2456eff',
-            âmago: '#00d659ff',
-            montes: '#93c7a9ff',
-            piéco: '#d2d600ff',
+            luna:     '#6e2f8bff',
+            coralia:  '#aec9ddff',
+            modega:   '#ed8936',
+            myr:      '#c2456eff',
+            âmago:    '#00d659ff',
+            montes:   '#93c7a9ff',
+            piéco:    '#d2d600ff',
             tariniel: '#0092d6ff'
         };
         

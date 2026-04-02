@@ -478,46 +478,71 @@
     border: 1px solid rgba(251, 191, 36, 0.2);
     border-radius: var(--border-radius);
     padding: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Regions take more space than types */
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 768px) {
+    .map-legend {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 .map-legend h4 {
     color: var(--accent-gold);
-    margin-bottom: 0.8rem;
-    font-size: 0.9rem;
+    margin: 0 0 1rem 0; /* Consistent margin */
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.15); /* Subtle separator */
 }
 
 .legend-regions {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 0.5rem;
-}
-
-.legend-types {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.6rem;
 }
 
 .legend-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    color: var(--text-muted);
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px; /* Pill shape */
+    color: var(--text-light);
     font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.legend-item:hover {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.3);
+    transform: translateY(-1px);
 }
 
 .legend-dot {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     flex-shrink: 0;
-    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 6px currentColor; /* Glow effect matching the color */
+}
+
+.legend-section {
+    display: flex;
+    flex-direction: column;
 }
 
 /* =============================================
@@ -721,6 +746,7 @@
     border-radius: var(--border-radius);
     overflow: hidden;
     animation: modalSlideIn 0.3s;
+    position: relative;
 }
 
 @keyframes modalSlideIn {

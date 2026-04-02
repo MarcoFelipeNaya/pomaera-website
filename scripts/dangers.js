@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const entries = [
         {
             id: 1,
-            name: "Exemplo Fauna",
+            name: "Urubu do Trinco",
             type: "fauna",
             danger: "medio",
-            region: "Âmago",
-            description: "Uma criatura de exemplo que habita as florestas do Âmago.",
+            region: "Modega",
+            description: "Uma criatura de.",
             fullDesc: "Descrição completa e lore desta criatura. Pode ser tão longa quanto necessário — aparece no modal quando o usuário clica em 'Ver mais'.",
             diet: "Herbívoro. Se alimenta principalmente de raízes e frutos silvestres.",
             behaviour: "Pacífica na maior parte do tempo, mas territorial durante a estação chuvosa.",

@@ -52,25 +52,7 @@
     </section>
 
     <main class="locations-container">
-        <!-- Filter Controls -->
-        <div class="filter-controls">
-            <div class="filter-group">
-                <h3>Filtrar por Categoria:</h3>
-                <div class="filter-tags">
-                    <button class="filter-tag active" data-filter="all">Todos</button>
-                    <button class="filter-tag" data-filter="city"><i class="fas fa-city"></i> Cidades</button>
-                    <button class="filter-tag" data-filter="wilderness"><i class="fas fa-tree"></i> Selvagem</button>
-                    <button class="filter-tag" data-filter="dungeon"><i class="fas fa-dungeon"></i> Masmorras</button>
-                    <button class="filter-tag" data-filter="town"><i class="fas fa-home"></i> Vilas</button>
-                    <button class="filter-tag" data-filter="ruin"><i class="fas fa-monument"></i> Ruínas</button>
-                </div>
-            </div>
-            
-            <div class="view-controls">
-                <button id="gridViewBtn" class="view-btn active"><i class="fas fa-th-large"></i> Grid</button>
-                <button id="listViewBtn" class="view-btn"><i class="fas fa-list"></i> List</button>
-            </div>
-        </div>
+
 
         <!-- Interactive Map Section -->
         <section class="map-section">
@@ -112,26 +94,71 @@
                 Region colours match exactly your regionColors in locations.js.
             -->
             <div class="map-legend">
-                <h4><i class="fas fa-layer-group"></i> Regiões</h4>
-                <div class="legend-regions">
-                    <div class="legend-item"><span class="legend-dot" style="background:#00d659"></span> Âmago</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#aec9dd"></span> Corália</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#9b4fc2"></span> Luna</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#ed8936"></span> Modega</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#93c7a9"></span> Montes Tempestuosos</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#c2456e"></span> Myr</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#d2d600"></span> Piéco</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#0092d6"></span> Tariniel</div>
-                </div>
-                <h4 style="margin-top: 1.2rem"><i class="fas fa-map-marker-alt"></i> Tipos</h4>
-                <div class="legend-types">
-                    <div class="legend-item"><i class="fas fa-city" style="color: var(--accent-purple)"></i> Cidade</div>
-                    <div class="legend-item"><i class="fas fa-home" style="color: var(--accent-purple)"></i> Vila</div>
-                    <div class="legend-item"><i class="fas fa-dungeon" style="color: var(--accent-purple)"></i> Dungeon</div>
-                    <div class="legend-item"><i class="fas fa-tree" style="color: var(--accent-purple)"></i> Natureza</div>
-                    <div class="legend-item"><i class="fas fa-monument" style="color: var(--accent-purple)"></i> Ruína</div>
-                </div>
+    <!-- Wrap each section in a container -->
+    <div class="legend-section">
+        <h4><i class="fas fa-layer-group"></i> Regiões</h4>
+        <div class="legend-regions">
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#00d659"></span>
+                Âmago
             </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#aec9dd"></span>
+                Corália
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#9b4fc2"></span>
+                Luna
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#ed8936"></span>
+                Modega
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#93c7a9"></span>
+                Montes Tempestuosos
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#c2456e"></span>
+                Myr
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#d2d600"></span>
+                Piéco
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#0092d6"></span>
+                Tariniel
+            </div>
+        </div>
+    </div>
+    
+    <div class="legend-section">
+        <h4><i class="fas fa-map-marker-alt"></i> Tipos</h4>
+        <div class="legend-types">
+            <div class="legend-item">
+                <i class="fas fa-city" style="color: #fbbf24"></i>
+                Cidade
+            </div>
+            <div class="legend-item">
+                <i class="fas fa-home" style="color: #a78bfa"></i>
+                Vila
+            </div>
+            <div class="legend-item">
+                <i class="fas fa-dungeon" style="color: #f87171"></i>
+                Dungeon
+            </div>
+            <div class="legend-item">
+                <i class="fas fa-tree" style="color: #4ade80"></i>
+                Natureza
+            </div>
+            <div class="legend-item">
+                <i class="fas fa-monument" style="color: #9ca3af"></i>
+                Ruína
+            </div>
+        </div>
+    </div>
+</div>
         </section>
 
 

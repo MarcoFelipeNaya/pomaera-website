@@ -195,7 +195,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const locationsGrid = document.getElementById('locationsGrid');
     const locationSearch = document.getElementById('locationSearch');
     const searchBtn = document.getElementById('searchBtn');
-    const filterTags = document.querySelectorAll('.filter-tag');
     const gridViewBtn = document.getElementById('gridViewBtn');
     const listViewBtn = document.getElementById('listViewBtn');
     const regionCards = document.querySelectorAll('.region-card');
@@ -258,23 +257,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // View toggle
-    gridViewBtn.addEventListener('click', function() {
-        if (currentView !== 'grid') {
-            currentView = 'grid';
-            locationsGrid.classList.remove('list-view');
-            gridViewBtn.classList.add('active');
-            listViewBtn.classList.remove('active');
-        }
-    });
+    if (gridViewBtn && listViewBtn) {
+        gridViewBtn.addEventListener('click', function() {
+            if (currentView !== 'grid') {
+                currentView = 'grid';
+                locationsGrid.classList.remove('list-view');
+                gridViewBtn.classList.add('active');
+                listViewBtn.classList.remove('active');
+            }
+        });
 
-    listViewBtn.addEventListener('click', function() {
-        if (currentView !== 'list') {
-            currentView = 'list';
-            locationsGrid.classList.add('list-view');
-            listViewBtn.classList.add('active');
-            gridViewBtn.classList.remove('active');
-        }
-    });
+        listViewBtn.addEventListener('click', function() {
+            if (currentView !== 'list') {
+                currentView = 'list';
+                locationsGrid.classList.add('list-view');
+                listViewBtn.classList.add('active');
+                gridViewBtn.classList.remove('active');
+            }
+        });
+    }
 
     // Modal
     closeModal.addEventListener('click', function() {
@@ -284,6 +285,13 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('click', function(e) {
         if (e.target === locationModal) {
             locationModal.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && locationModal.style.display === 'block') {
+            locationModal.style.display = 'none';
+            document.body.style.overflow = '';
         }
     });
 
@@ -306,6 +314,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function renderLocations(locationsArray) {
     locationsGrid.innerHTML = '';
+
+    const existingBtn = document.querySelector('.show-more-btn');
+    if (existingBtn) existingBtn.remove();
     
     if (locationsArray.length === 0) {
         locationsGrid.innerHTML = `

@@ -463,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function () {
             excerpt: "Trouxe o seu povo para um lugar apenas deles.",
             backstory: ".",
             image: "/images/personagens/Placeholder.webp",
-            player: "Lucas",
+            player: "Dhiego",
             faction: "Sem Nome",
             status: "Aposentado"
         },

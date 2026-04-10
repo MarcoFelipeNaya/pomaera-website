@@ -257,6 +257,20 @@ a.card {
     color: var(--accent-gold) !important;
 }
 
+.footer-note a{
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--accent-gold) !important;
+    text-decoration: none;
+}
+
+.footer-note a:hover{
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--accent-purple) !important;
+    text-decoration: none;
+}
+
 .card, .character-card {
     opacity: 0;
     transform: translateY(20px);

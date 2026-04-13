@@ -123,6 +123,17 @@ document.addEventListener('DOMContentLoaded', function () {
             behaviour: "Fica imóvel durante o dia, ativo ao entardecer. Prefere atacar sozinho, mas colônias podem coordenar emboscadas.",
             image: "/images/bestiary/cipo-sangue.webp"
         },
+        {
+            id: 8,
+            name: "Cogumelito",
+            type: "fungo",
+            danger: "inofensivo",
+            region: "Costa da Tormenta",
+            description: "Pequenos cogumelos criados por magia.",
+            fullDesc: "Em Modega, essas criaturas nasceram após um grande cristal de mana ter sido fundido ao casco de um velho navio em pedaços.",
+            behaviour: "Eles são extremamente atrapalhados porém são úteis no dia a dia para pequenas tarefas, eles são frágeis e morrem rápidamente porém se nascem com a mesma rápidez.",
+            image: "/images/bestiary/Cogumelinho.webp"
+        },
         
     ];
 

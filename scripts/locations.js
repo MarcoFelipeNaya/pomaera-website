@@ -329,7 +329,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    const initialCount = 3;
+    function getInitialCount() {
+        if (window.innerWidth < 640) return 2;       // mobile
+        if (window.innerWidth < 1024) return 4;      // tablet
+        return 5;                                     // desktop
+    }
+
+    const initialCount = getInitialCount();
     
     locationsArray.forEach((location, index) => {
         const card = createLocationCard(location, index);
@@ -638,6 +644,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show modal
         locationModal.style.display = 'block';
     }
+
+    let resizeTimeout;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            filterLocations(); // or renderLocations(locations) depending on current state
+        }, 250);
+    });
 
     // Initialize with fade-in animation
     setTimeout(() => {

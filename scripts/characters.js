@@ -563,6 +563,17 @@ document.addEventListener('DOMContentLoaded', function () {
             backstory: "Fugindo de Myr após os eventos da Terra Vermelha, Phillip se estabeleceu no Âmago onde viveu até a explosão de Inata.",
             image: "/images/personagens/Phillip.webp",
             faction: "Engenheiros da Tormenta",
+            status: "Falecido"
+        },
+        {
+            id: 104,
+            name: "Pereba",
+            race: "Goblin",
+            class: "Goblin",
+            excerpt: "Um jovem goblin que foi adotado por um grupo de aventureiros.",
+            backstory: "Apenas um goblin comum que roubava viajantes nas estradas se tornou parte importante de um dos grupos mais infames de toda Pomaera.",
+            image: "/images/personagens/Pereba.webp",
+            faction: "Caraputangas",
             status: "Desaparecido"
         },
         {
